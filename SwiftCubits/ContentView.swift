@@ -8,17 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isGenerate = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("This is another test")
+        ZStack{
+            TabView{
+                
+                Home()
+                    .tabItem(){
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
+                Profile()
+                    .tabItem(){
+                        Image(systemName: "person.fill")
+                        Text("Profile")
+                    }
+                
+            }
+            
+            Button {
+                NavigationLink("Go to Options") {
+                    Options()
+                }
+            } label: {
+                Image(systemName: "plus")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(.white)
+            }
+            .padding()
+            .background(Color.blue)
+            .clipShape(Circle())
+            .offset(y: 325)
         }
-        .padding()
+        
     }
 }
+
+
+
 
 #Preview {
     ContentView()
 }
+
+

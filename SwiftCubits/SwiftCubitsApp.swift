@@ -2,7 +2,7 @@
 //  SwiftCubitsApp.swift
 //  SwiftCubits
 //
-//  Created by Wei Chen on 1/3/24.
+//  Created by Ethan Chen on 1/3/24.
 //
 
 import SwiftUI
