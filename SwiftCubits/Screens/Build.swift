@@ -9,8 +9,19 @@ import SwiftUI
 
 struct Build: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink{
+            Instructions()
+        } label: {
+            Image(systemName:"plus")
+                .resizable()
+                .frame(width:30, height: 30)
+                .foregroundColor(.white)
+        }
+        .padding()
+        .background(Color.blue)
+        .clipShape(Circle())
     }
+    
 }
 
 #Preview {

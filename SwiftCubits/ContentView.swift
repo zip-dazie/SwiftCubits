@@ -8,43 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isGenerate = false
+    @State private var selection: Int = 0
     var body: some View {
-        ZStack{
-            TabView{
-                
+        TabView (selection: $selection) {
+            NavigationView{
                 Home()
-                    .tabItem(){
-                        Image(systemName: "house.fill")
-                        Text("Home")
-                    }
-                Profile()
-                    .tabItem(){
-                        Image(systemName: "person.fill")
-                        Text("Profile")
-                    }
-                
             }
-            
-            Button {
-                NavigationLink("Go to Options") {
-                    Options()
+                .tabItem {
+                    Image(systemName: "house.fill")
                 }
-            } label: {
-                Image(systemName: "plus")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.white)
+                .tag(0)
+                .navigationBarHidden(selection == 0)
+            
+            NavigationView{
+                Build()
             }
-            .padding()
-            .background(Color.blue)
-            .clipShape(Circle())
-            .offset(y: 325)
+            .tabItem{
+                Image(systemName: "plus")
+            }
+            .tag(1)
+            .navigationBarHidden(selection == 1)
+            NavigationView{
+                Profile()
+            }
+                .tabItem {
+                    Image(systemName: "person.fill")
+                }
+                .tag(2)
+                .navigationBarHidden(selection == 2)
         }
-        
     }
 }
-
 
 
 
@@ -53,3 +47,15 @@ struct ContentView: View {
 }
 
 
+/*
+ } label: {
+ Image(systemName: "plus")
+ .resizable()
+ .frame(width: 30, height: 30)
+ .foregroundColor(.white)
+ }
+ .padding()
+ .background(Color.blue)
+ .clipShape(Circle())
+ .offset(y: 325)
+ */
