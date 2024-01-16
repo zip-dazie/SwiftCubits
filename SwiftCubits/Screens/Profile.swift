@@ -9,10 +9,49 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
-        Text("Profile")
+        ScrollView{
+            LazyVStack{
+                Image("catFiller")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
+                
+                Text("Peter Anteater")
+                    .bold()
+                    .font(.largeTitle)
+                    .padding()
+                
+                Text("Creations")
+                    .bold()
+                    .font(.largeTitle)
+                    .padding()
+                
+                Text("Personalization")
+                    .bold()
+                    .font(.largeTitle)
+                    .padding()
+                
+                Button(action: {
+                    print("clicked")
+                }) {
+                    Text("Settings")
+                        .padding()
+                        .frame(maxWidth: 350)
+                        .background(
+                            RoundedRectangle(
+                                cornerRadius: 10,
+                                style:.continuous
+                            )
+                            .fill(Color("CustomGray"))
+                        )
+                }
+
+            }
+        }
     }
 }
 
 #Preview {
     Profile()
 }
+
