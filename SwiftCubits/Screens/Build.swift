@@ -9,19 +9,9 @@ import SwiftUI
 
 struct Build: View {
     var body: some View {
-        NavigationLink{
-            Instructions()
-        } label: {
-            Image(systemName:"plus")
-                .resizable()
-                .frame(width:30, height: 30)
-                .foregroundColor(.white)
-        }
-        .padding()
-        .background(Color.blue)
-        .clipShape(Circle())
+        Text("Build")
     }
-    
+
 }
 
 #Preview {
