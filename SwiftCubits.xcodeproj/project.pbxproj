@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56900662B612977000D2AB9 /* Cubits1.obj in Resources */ = {isa = PBXBuildFile; fileRef = B56900652B612977000D2AB9 /* Cubits1.obj */; };
+		B56900682B612A5E000D2AB9 /* Cubits2.obj in Resources */ = {isa = PBXBuildFile; fileRef = B56900672B612A5E000D2AB9 /* Cubits2.obj */; };
 		B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573C83A2B57B305006F79E1 /* CustomBar.swift */; };
+		B580C1FC2B5B6C8C00F77808 /* GOAT.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B580C1FB2B5B6C8C00F77808 /* GOAT.usdz */; };
+		B580C1FE2B5B79F400F77808 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580C1FD2B5B79F400F77808 /* Model.swift */; };
 		B5993E392B48AB2300D2E79C /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5993E382B48AB2300D2E79C /* Build.swift */; };
 		B5F0EF552B46083C002F9F8B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0EF542B46083C002F9F8B /* Home.swift */; };
 		B5F0EF572B460852002F9F8B /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0EF562B460852002F9F8B /* Instructions.swift */; };
@@ -39,7 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B56900652B612977000D2AB9 /* Cubits1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cubits1.obj; sourceTree = "<group>"; };
+		B56900672B612A5E000D2AB9 /* Cubits2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cubits2.obj; sourceTree = "<group>"; };
 		B573C83A2B57B305006F79E1 /* CustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBar.swift; sourceTree = "<group>"; };
+		B580C1FB2B5B6C8C00F77808 /* GOAT.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = GOAT.usdz; path = SwiftCubits/Assets/GOAT.usdz; sourceTree = SOURCE_ROOT; };
+		B580C1FD2B5B79F400F77808 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B5993E382B48AB2300D2E79C /* Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		B5F0EF542B46083C002F9F8B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B5F0EF562B460852002F9F8B /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
@@ -81,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B56900642B612750000D2AB9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B56900672B612A5E000D2AB9 /* Cubits2.obj */,
+				B56900652B612977000D2AB9 /* Cubits1.obj */,
+				B580C1FB2B5B6C8C00F77808 /* GOAT.usdz */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		B5B8D0E42B48B99E005FE67B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +149,8 @@
 		B5F8E4692B46036A008CB69C /* SwiftCubits */ = {
 			isa = PBXGroup;
 			children = (
+				B56900642B612750000D2AB9 /* Assets */,
+				B580C1FD2B5B79F400F77808 /* Model.swift */,
 				B573C83A2B57B305006F79E1 /* CustomBar.swift */,
 				B5F0EF512B4607F2002F9F8B /* Screens */,
 				B5F8E46A2B46036A008CB69C /* SwiftCubitsApp.swift */,
@@ -270,8 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56900682B612A5E000D2AB9 /* Cubits2.obj in Resources */,
 				B5F8E4722B46036B008CB69C /* Preview Assets.xcassets in Resources */,
 				B5F8E46F2B46036B008CB69C /* Assets.xcassets in Resources */,
+				B580C1FC2B5B6C8C00F77808 /* GOAT.usdz in Resources */,
+				B56900662B612977000D2AB9 /* Cubits1.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +325,7 @@
 				B5F0EF552B46083C002F9F8B /* Home.swift in Sources */,
 				B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */,
 				B5F0EF572B460852002F9F8B /* Instructions.swift in Sources */,
+				B580C1FE2B5B79F400F77808 /* Model.swift in Sources */,
 				B5F8E46B2B46036A008CB69C /* SwiftCubitsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

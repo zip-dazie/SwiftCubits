@@ -7,9 +7,19 @@
 
 import SwiftUI
 
+import SceneKit
 struct Build: View {
+    @State var scene: SCNScene? = .init(named: "GOAT.usdz")
     var body: some View {
-        Text("Build")
+        VStack{
+            Text("Build").offset(y: 100)
+            SceneView()
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background {
+                Color("Dark")
+                   
+            } .ignoresSafeArea()
+      
     }
 
 }

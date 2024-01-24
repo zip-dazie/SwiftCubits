@@ -10,39 +10,30 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedTab: Views = .home
     var body: some View {
-        switch selectedTab {
-        case .home:
-            NavigationStack{
-                VStack{
-                    Home()
-                    Spacer()
+            ZStack {
+                // Main content
+                switch selectedTab {
+                case .home:
+                    NavigationStack {
+                        Home()
+                    }
+                case .profile:
+                    NavigationStack {
+                        Profile()
+                    }
+                case .build:
+                    NavigationStack {
+                        Build()
+                    }
                 }
-               
-            }
-        case .profile:
-            NavigationStack{
-                VStack{
-                    Profile()
-                    Spacer()
+
+                VStack {
+                    CustomBar(selectedTab: $selectedTab)
                 }
-                
-            }
-        case .build:
-            NavigationStack{
-                VStack{
-                    Build()
-                    Spacer()
-                }
-               
             }
         }
-        CustomBar(selectedTab: $selectedTab)
-            .frame(width: .infinity)
-        
-        
-    }
-    
 }
+
 #Preview {
     ContentView()
 }

@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-extension Color{
-    static let customPurple = Color(red:89/255, green: 95/255, blue: 232/255)
-}
+
 
 enum Views{
     case home
@@ -36,20 +34,20 @@ struct CustomBar: View {
                 .clipShape(Circle())
                 .frame(width:50, height: 50)
                 .shadow(color:.gray, radius: 5, x: 0, y:5)
-                .offset(x: geometry.size.width * 0.435, y:geometry.size.height * 0.78)
+                .offset(x: geometry.size.width * 0.435, y:geometry.size.height * 0.89)
             Rectangle()
                 .frame(width: 315, height:2)
                 .foregroundColor(.gray)
                 .opacity(0.25)
                 .shadow(color:.black, radius: 3, x: 0, y:-1)
-                .offset(x: geometry.size.width * -0.4, y: geometry.size.height * 0.87)
+                .offset(x: geometry.size.width * -0.4, y: geometry.size.height * 0.93)
             // right line to parabola
             Rectangle()
                 .frame(width:305, height:2)
                 .foregroundColor(.gray)
                 .opacity(0.25)
                 .shadow(color:.black, radius: 3, x: 0, y:-1)
-                .offset(x: geometry.size.width * 0.6,y: geometry.size.height * 0.87)
+                .offset(x: geometry.size.width * 0.6,y: geometry.size.height * 0.93)
             Path { path in
                 // parabola; midpoint = 0.5
                 // adjust focal width (width of parabola)
@@ -61,8 +59,8 @@ struct CustomBar: View {
                 let controlX: CGFloat = geometry.size.width / 2
                 
                 // adjust starting position of ends
-                path.move(to: CGPoint(x: startX, y: geometry.size.height * 0.87))
-                path.addQuadCurve(to: CGPoint(x: endX, y: geometry.size.height * 0.87),
+                path.move(to: CGPoint(x: startX, y: geometry.size.height * 0.93))
+                path.addQuadCurve(to: CGPoint(x: endX, y: geometry.size.height * 0.93),
                                   control: CGPoint(x: controlX, y: controlY)) // adjust 'a' value
                 
             }
@@ -98,7 +96,7 @@ struct CustomBar: View {
                 .foregroundColor(selectedTab == .profile ? .customPurple : .gray)
                 .offset(x: geometry.size.width * 0.62)
                 
-            }.offset(y: geometry.size.height * 0.92)
+            }.offset(y: geometry.size.height * 0.96)
         }
     }
     
