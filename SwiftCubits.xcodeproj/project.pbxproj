@@ -99,6 +99,15 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		B56900692B61A84C000D2AB9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B573C83A2B57B305006F79E1 /* CustomBar.swift */,
+				B580C1FD2B5B79F400F77808 /* Model.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		B5B8D0E42B48B99E005FE67B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,9 +158,8 @@
 		B5F8E4692B46036A008CB69C /* SwiftCubits */ = {
 			isa = PBXGroup;
 			children = (
+				B56900692B61A84C000D2AB9 /* Components */,
 				B56900642B612750000D2AB9 /* Assets */,
-				B580C1FD2B5B79F400F77808 /* Model.swift */,
-				B573C83A2B57B305006F79E1 /* CustomBar.swift */,
 				B5F0EF512B4607F2002F9F8B /* Screens */,
 				B5F8E46A2B46036A008CB69C /* SwiftCubitsApp.swift */,
 				B5F8E46C2B46036A008CB69C /* ContentView.swift */,
