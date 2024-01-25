@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //TODO: Include default sign in state, AuthModel will save auth locally
+    
     @State private var selectedTab: Views = .home
     var body: some View {
             ZStack {
