@@ -11,13 +11,15 @@ import SwiftUI
 final class SettingsViewModel: ObservableObject{
     
     func signOut() throws {
-        //try authManager.shared.signOut()
+        try AuthManager.shared.signOut()
     }
 }
 
 struct Profile: View {
-    //@EnvironmentObject private var authManagerCopy: AuthManage
+    //@EnvironmentObject private var authManagerCopy: AuthManager
+    @Binding var showSignInView: Bool
     @StateObject private var viewModel = SettingsViewModel()
+    
     var body: some View {
         ScrollView{
             LazyVStack {
@@ -121,15 +123,21 @@ struct Profile: View {
                 )
                 
             }
+            .padding([.top,.bottom], 5)
             
             Button("Log out"){
                 Task{
                     do{
-                        //try viewModel
+                        try viewModel.signOut()
+                        showSignInView = true
+                    } catch{
+                        //TODO: FIX THIS ERROR HANDLING
+                        print(error)
                     }
                 }
             }
-            .padding([.top,.bottom], 5)
+            .padding(.bottom, 55)
+            
             
         } .padding(.bottom, 55)
     }
@@ -143,6 +151,6 @@ private func scaleValue(geometry: GeometryProxy) -> CGFloat {
     return scale
 }
 #Preview {
-    Profile()
+    Profile(showSignInView: .constant(false))
 }
 
