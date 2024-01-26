@@ -11,8 +11,6 @@ struct ContentView: View {
     
     //authmodel will save signinview state locally
     @State private var showSignInView: Bool = false
-    
-    
     @State private var selectedTab: Views = .home
     var body: some View {
             ZStack {
@@ -21,16 +19,16 @@ struct ContentView: View {
                 case .home:
                     NavigationStack {
                         Home()
-                        //MARK: THIS CLASS IS INCLUDED FOR TEMP FUNCTIONALITY
-                        
                     }
                 case .profile:
                     NavigationStack {
-                        Profile()
+                        Profile(showSignInView: $showSignInView)
                     }
                 case .build:
                     NavigationStack {
                         Build()
+                            //
+                            //.environmentObject(AuthManager)
                     }
                 }
 
@@ -38,15 +36,17 @@ struct ContentView: View {
                     CustomBar(selectedTab: $selectedTab)
                 }
             }
-//            .onAppear{
-//                let authUser = try? AuthManager.shared.getAuthUser()
-//                self.showSignInView = authUser == nil ? true : false
-//            }
-//            .fullScreenCover(isPresented: $showSignInView, content: {
-//                NavigationStack{
-//                    AuthView()
-//                }
-//            })
+        //MARK: RE ADD THIS WHEN READY
+            .onAppear{
+                let authUser = try? AuthManager.shared.getAuthUser()
+                self.showSignInView = authUser == nil ? true : false
+            }
+            
+            .fullScreenCover(isPresented: $showSignInView, content: { //bind to showSigninView
+                NavigationStack{
+                    AuthView()
+                }
+            })
         }
 }
 
