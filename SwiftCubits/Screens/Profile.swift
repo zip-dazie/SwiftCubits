@@ -10,42 +10,124 @@ import SwiftUI
 struct Profile: View {
     var body: some View {
         ScrollView{
+            
             LazyVStack{
+                
                 Image("catFiller")
                     .resizable()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 72, height: 72)
                     .clipShape(Circle())
                 
                 Text("Peter Anteater")
                     .bold()
-                    .font(.largeTitle)
+                    .font(.system(size:20))
                     .padding()
                 
-                Text("Creations")
-                    .bold()
-                    .font(.largeTitle)
-                    .padding()
+                HStack {
+                    Text("My Favorites")
+                        .bold()
+                        .font(.system(size: 20))
+                        .padding()
+                    
+                    Spacer()
+                }
                 
-                Text("Personalization")
-                    .bold()
-                    .font(.largeTitle)
-                    .padding()
+                ScrollView(.horizontal){
+                    LazyHStack {
+                        Image("catFiller")
+                            .resizable()
+                            .frame(width: 198, height: 260)
+                            .cornerRadius(10)
+                            .padding()
+                        
+                        Image("catFiller")
+                            .resizable()
+                            .frame(width: 198, height: 260)
+                            .cornerRadius(10)
+                            .padding()
+                        
+                        Image("catFiller")
+                            .resizable()
+                            .frame(width: 198, height: 260)
+                            .cornerRadius(10)
+                            .padding()
+                        
+                        Image("catFiller")
+                            .resizable()
+                            .frame(width: 198, height: 260)
+                            .cornerRadius(10)
+                            .padding()
+                    }
+                }
+                
+                HStack {
+                    Text("Personalization")
+                        .bold()
+                        .font(.system(size: 20))
+                        .padding()
+                    
+                    Spacer()
+                }
                 
                 Button(action: {
                     print("clicked")
                 }) {
-                    Text("Settings")
-                        .padding()
-                        .frame(maxWidth: 350)
-                        .background(
-                            RoundedRectangle(
-                                cornerRadius: 10,
-                                style:.continuous
-                            )
-                            .fill(Color("CustomGray"))
+                    
+                    HStack {
+                        
+                        Image("settingsicon")
+                        
+                        Text("Settings")
+                            .font(.system(size: 16))
+                            .padding([.leading], 5)
+                            .foregroundColor(.black)
+                        
+                        Spacer()
+                        
+                        Image("arrowrighticon")
+                    }
+                    .padding()
+                    .frame(width: 342, height: 65)
+                    .background(
+                        RoundedRectangle(
+                            cornerRadius: 10,
+                            style:.continuous
                         )
+                        .fill(Color("CustomGray"))
+                    )
+                    
                 }
-
+                .padding([.top,.bottom], 5)
+                
+                Button(action: {
+                    print("clicked")
+                }){
+                    HStack {
+                        
+                        Image("notificationsicon")
+                        
+                        Text("Notifications")
+                            .font(.system(size: 16))
+                            .padding([.leading], 5)
+                            .foregroundColor(.black)
+                        
+                        Spacer()
+                        
+                        Image("arrowrighticon")
+                    }
+                    .padding()
+                    .frame(width: 342, height: 65)
+                    .background(
+                        RoundedRectangle(
+                            cornerRadius: 10,
+                            style:.continuous
+                        )
+                        .fill(Color("CustomGray"))
+                    )
+                    
+                }
+                .padding([.top,.bottom], 5)
+                
             }
         }
     }
