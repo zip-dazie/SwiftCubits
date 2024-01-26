@@ -26,6 +26,7 @@ final class SignInEmailViewModel: ObservableObject{
                 print("Success")
                 print(returnedUserData)
             } catch{
+                //TODO: FIX ERROR HANDLING
                 print ("Error: \(error)")
             }
         }

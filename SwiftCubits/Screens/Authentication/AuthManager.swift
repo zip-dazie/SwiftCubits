@@ -22,7 +22,7 @@ struct AuthDataResultModel{ // local copy of authentication
 
 final class AuthManager{
     
-    static let shared = AuthManager() // FIX THIS SINGLETON -- DEPENDENCY INJECTION
+    static let shared = AuthManager() // TODO: FIX THIS SINGLETON -- DEPENDENCY INJECTION
     private init() { }
 
     func getAuthUser() throws -> AuthDataResultModel{ //save model locally in SDK, skip database wait
