@@ -51,7 +51,7 @@ struct AuthView: View {
                 Button{
                     viewModel.signIn()
                 } label: {
-                    Text("Sign in")
+                    Text("Sign up")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 55)
@@ -61,7 +61,7 @@ struct AuthView: View {
                 }
             }
             .padding()
-            .navigationTitle("Sign in with Email")
+            .navigationTitle("Sign up with Email")
             
         }
             

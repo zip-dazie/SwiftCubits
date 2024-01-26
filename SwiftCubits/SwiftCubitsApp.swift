@@ -16,7 +16,7 @@ struct SwiftCubitsApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack{
-                AuthView()
+                ContentView()
             }
             //ContentView()
         }

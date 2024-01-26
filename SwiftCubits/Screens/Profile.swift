@@ -7,7 +7,17 @@
 
 import SwiftUI
 
+@MainActor
+final class SettingsViewModel: ObservableObject{
+    
+    func signOut() throws {
+        //try authManager.shared.signOut()
+    }
+}
+
 struct Profile: View {
+    //@EnvironmentObject private var authManagerCopy: AuthManage
+    @StateObject private var viewModel = SettingsViewModel()
     var body: some View {
         ScrollView{
             LazyVStack {
@@ -110,6 +120,14 @@ struct Profile: View {
                     .fill(Color("CustomGray"))
                 )
                 
+            }
+            
+            Button("Log out"){
+                Task{
+                    do{
+                        //try viewModel
+                    }
+                }
             }
             .padding([.top,.bottom], 5)
             

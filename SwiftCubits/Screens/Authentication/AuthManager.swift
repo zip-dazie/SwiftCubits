@@ -20,7 +20,7 @@ struct AuthDataResultModel{ // local copy of authentication
     }
 }
 
-final class AuthManager {
+final class AuthManager{
     
     static let shared = AuthManager() // FIX THIS SINGLETON -- DEPENDENCY INJECTION
     private init() { }
@@ -35,5 +35,9 @@ final class AuthManager {
     func createUser(email: String, password: String) async throws -> AuthDataResultModel{
         let authDataResult = try await Auth.auth().createUser(withEmail: email, password: password)
         return AuthDataResultModel(user: authDataResult.user)
+    }
+    
+    func signOut() throws{
+        try Auth.auth().signOut()
     }
 }
