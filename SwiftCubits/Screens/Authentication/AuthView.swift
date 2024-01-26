@@ -14,27 +14,35 @@ final class SignInEmailViewModel: ObservableObject{
     @Published var email = ""
     @Published var password = ""
     
-    func signIn(){
+    func signUp() async throws {
         guard !email.isEmpty, !password.isEmpty else{
-            print ("Error invalid field") //FIX THIS DISPLAY AN ERROR
+            print ("Error invalid field") //TODO: Error handling
             return
         }
         
-        Task{
-            do {
-                let returnedUserData = try await AuthManager.shared.createUser(email: email, password: password)
-                print("Success")
-                print(returnedUserData)
-            } catch{
-                //TODO: FIX ERROR HANDLING
-                print ("Error: \(error)")
-            }
+        do {
+            let returnedUserData = try await AuthManager.shared.createUser(email: email, password: password)
+            print("Success")
+            print(returnedUserData)
+        } catch{
+            //TODO: FIX ERROR HANDLING
+            print ("Error: \(error)")
         }
+    }
+    
+    func signIn() async throws{ // MARK: Currently sign up falls through with sign in, fix later
+        guard !email.isEmpty, !password.isEmpty else{
+            print ("Error invalid field")
+            return
+        }
+        let _ = try await AuthManager.shared.signInUser(email: email, password: password)
     }
 }
 
 struct AuthView: View {
+    
     @StateObject private var viewModel = SignInEmailViewModel()
+    @Binding var showSignInView: Bool
     
     var body: some View {
         NavigationStack{
@@ -50,9 +58,25 @@ struct AuthView: View {
                     .cornerRadius(10)
                 
                 Button{
-                    viewModel.signIn()
+                    Task{
+                        do{
+                            try await viewModel.signUp()
+                            showSignInView = false
+                            return
+                        }catch{
+                            print("Error") //TODO: ERROR HANDLING
+                        }
+                        //MARK: Sign in fall through occurs here
+                        do{
+                            try await viewModel.signIn()
+                            showSignInView = false
+                            return
+                        } catch{
+                            print ("Error")
+                        } //END
+                    }
                 } label: {
-                    Text("Sign up")
+                    Text("Sign up/in")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 55)
@@ -62,7 +86,7 @@ struct AuthView: View {
                 }
             }
             .padding()
-            .navigationTitle("Sign up with Email")
+            .navigationTitle("Sign up/in with Email")
             
         }
             
@@ -71,5 +95,5 @@ struct AuthView: View {
 
 
 #Preview{
-    AuthView();
+    AuthView(showSignInView: .constant(false));
 }
