@@ -196,6 +196,8 @@
 				346D24CA2B629CBB00B06FBE /* Manager */,
 				B5F8E46A2B46036A008CB69C /* SwiftCubitsApp.swift */,
 				B5F8E46C2B46036A008CB69C /* ContentView.swift */,
+				B573C8302B4E40E6006F79E1 /* NavBar.swift */,
+				82F282EB2B637F3C003F9D72 /* Poppins-Bold.ttf */,
 				B5F8E46E2B46036B008CB69C /* Assets.xcassets */,
 				346D24BE2B628F0000B06FBE /* GoogleService-Info.plist */,
 				B5F8E4702B46036B008CB69C /* Preview Content */,
@@ -342,6 +344,7 @@
 			files = (
 				B56900682B612A5E000D2AB9 /* Cubits2.obj in Resources */,
 				B5F8E4722B46036B008CB69C /* Preview Assets.xcassets in Resources */,
+				82F282EC2B637F3D003F9D72 /* Poppins-Bold.ttf in Resources */,
 				B5F8E46F2B46036B008CB69C /* Assets.xcassets in Resources */,
 				B580C1FC2B5B6C8C00F77808 /* GOAT.usdz in Resources */,
 				B56900662B612977000D2AB9 /* Cubits1.obj in Resources */,
@@ -353,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F282ED2B637F3D003F9D72 /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F282EE2B637F3D003F9D72 /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

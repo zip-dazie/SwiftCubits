@@ -35,6 +35,7 @@ struct CustomBar: View {
                 .frame(width:50, height: 50)
                 .shadow(color:.gray, radius: 5, x: 0, y:5)
                 .offset(x: geometry.size.width * 0.435, y:geometry.size.height * 0.89)
+            // left line
             Rectangle()
                 .frame(width: 315, height:2)
                 .foregroundColor(.gray)
@@ -42,6 +43,7 @@ struct CustomBar: View {
                 .shadow(color:.black, radius: 3, x: 0, y:-1)
                 .offset(x: geometry.size.width * -0.4, y: geometry.size.height * 0.93)
             // right line to parabola
+            
             Rectangle()
                 .frame(width:305, height:2)
                 .foregroundColor(.gray)
