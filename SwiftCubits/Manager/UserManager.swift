@@ -7,6 +7,8 @@
 
 import Foundation
 //import FirebaseAuth
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 //struct AuthDataResultModel{
 //    let uid: String
@@ -15,12 +17,16 @@ import Foundation
 //}
 
 final class UserManager {
+    static let shared = UserManager() //TODO: another singleton here, can fix low priority
+    private init() {}
     
-//    static let shared = AuthenticationManager() // FIX THIS SINGLETON -- DEPENDENCY INJECTION
-//    private init() { }
-//    
-//    func createUser(email: String, password: String) async throws{
-//        let authDataResult = try await Auth.auth().createUser(withEmail: email, password: password)
-//        authDataResult.user.is
-//    }
+    func createNewUser(auth: AuthDataResultModel) async throws{
+        var userData: [String:Any] = [
+            "user_id" : auth.uid,
+            "date_created" : Timestamp(),
+            "email" : auth.email
+        
+        ]
+        try await Firestore.firestore().collection("users").document(auth.uid).setData(userData, merge: false)
+    }
 }
