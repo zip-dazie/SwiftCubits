@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseAuth
 
-struct AuthDataResultModel{ // local copy of authentication
+struct AuthDataResultModel{ // local copy of authentication configured to store in firebase SDK
     let uid: String
     let email: String? //optional string
     let photoURL: String? //optional string
@@ -22,10 +22,10 @@ struct AuthDataResultModel{ // local copy of authentication
 
 final class AuthManager{
     
-    static let shared = AuthManager() // TODO: FIX THIS SINGLETON -- DEPENDENCY INJECTION
+    static let shared = AuthManager() // TODO: fix this singleton, low priority
     private init() { }
 
-    func getAuthUser() throws -> AuthDataResultModel{ //save model locally in SDK, skip database wait
+    func getAuthUser() throws -> AuthDataResultModel{ //LOCAL COPY IS SAVED -- NO ASYNC
         guard let user = Auth.auth().currentUser else{
             throw URLError(.badServerResponse)
         }
@@ -40,6 +40,10 @@ final class AuthManager{
     @discardableResult
     func signInUser(email: String, password: String) async throws -> AuthDataResultModel{
         let authDataResult = try await Auth.auth().signIn(withEmail: email, password: password)
+        
+        //MARK: MAKE SURE THIS FLOW IS SEPARATE FROM SIGN IN WHEN FIXING FALL THROUGH WITH SIGN IN AND SIGN UP
+        //try await UserManager.shared.createNewUser(auth: authDataResult)
+        
         return AuthDataResultModel(user: authDataResult.user)
     }
     

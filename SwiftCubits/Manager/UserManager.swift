@@ -14,7 +14,7 @@ import Foundation
 //    let photoUrl: String? //optional string
 //}
 
-final class SessionManager {
+final class UserManager {
     
 //    static let shared = AuthenticationManager() // FIX THIS SINGLETON -- DEPENDENCY INJECTION
 //    private init() { }
