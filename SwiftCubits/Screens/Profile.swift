@@ -10,6 +10,14 @@ import SwiftUI
 @MainActor
 final class SettingsViewModel: ObservableObject{
     
+    @Published private(set) var user: AuthDataResultModel? = nil // only allow modification within this file "private(set)"
+    
+    
+    //TODO: MOVE THIS TO AN ONAPPEAR 
+    func loadCurrentUser() throws{
+        self.user = try AuthManager.shared.getAuthUser()
+    }
+    
     func signOut() throws {
         try AuthManager.shared.signOut()
     }
@@ -56,6 +64,7 @@ struct Profile: View {
                     }
                 }
             }
+            
             
             HStack {
                 Text("Personalization")
@@ -125,6 +134,7 @@ struct Profile: View {
             }
             .padding([.top,.bottom], 5)
             
+            //TODO: ADD UI ELEMENTS
             Button("Log out"){
                 Task{
                     do{
