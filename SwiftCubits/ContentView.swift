@@ -36,7 +36,7 @@ struct ContentView: View {
                     CustomBar(selectedTab: $selectedTab)
                 }
             }
-        //MARK: RE ADD THIS WHEN READY
+
             .onAppear{
                 let authUser = try? AuthManager.shared.getAuthUser()
                 self.showSignInView = authUser == nil ? true : false
