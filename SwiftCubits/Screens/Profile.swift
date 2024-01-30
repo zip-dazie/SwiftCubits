@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct Profile: View {
+    //@EnvironmentObject private var authManagerCopy: AuthManager
+    @Binding var showSignInView: Bool
+    @StateObject private var viewModel = SettingsViewModel()
+    
     var body: some View {
         ScrollView{
             LazyVStack {
@@ -44,6 +48,7 @@ struct Profile: View {
                     }
                 }
             }
+            
             
             HStack {
                 Text("Personalization")
@@ -113,6 +118,21 @@ struct Profile: View {
             }
             .padding([.top,.bottom], 5)
             
+            //TODO: ADD UI ELEMENTS
+            Button("Log out"){
+                Task{
+                    do{
+                        try viewModel.signOut()
+                        showSignInView = true
+                    } catch{
+                        //TODO: FIX THIS ERROR HANDLING
+                        print(error)
+                    }
+                }
+            }
+            .padding(.bottom, 55)
+            
+            
         } .padding(.bottom, 55)
     }
 }
@@ -125,6 +145,6 @@ private func scaleValue(geometry: GeometryProxy) -> CGFloat {
     return scale
 }
 #Preview {
-    Profile()
+    Profile(showSignInView: .constant(false))
 }
 
