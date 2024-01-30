@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-
-
 struct AuthView: View {
     
     @StateObject private var viewModel = SignInEmailViewModel()
