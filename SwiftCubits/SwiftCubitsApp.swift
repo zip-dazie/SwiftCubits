@@ -15,10 +15,8 @@ struct SwiftCubitsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
-                ContentView()
-            }
-            //ContentView()
+            ContentView()
+            //.environmentObject(UploadedFilesModel()) // For local Caching
         }
     }
 }
@@ -32,3 +30,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   }
 }
 
+/* persisting data for later backend handling
+ Uploaded file history
+ User information
+ Generated Instructions
+ */

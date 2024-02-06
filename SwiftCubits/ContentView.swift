@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     //authmodel will save signinview state locally
     @State private var showSignInView: Bool = false
     @State private var selectedTab: Views = .home

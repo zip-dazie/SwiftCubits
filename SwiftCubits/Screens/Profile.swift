@@ -27,11 +27,11 @@ struct Profile: View {
                 
                 HStack {
                     Text("My Favorites")
-                        .fontWeight(.heavy)              .font(.system(size: 23))
+                        .fontWeight(.heavy)              
+                        .font(.system(size: 23))
                         .padding([.leading], 20)
                     Spacer()
                 }
-                
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack(spacing: 0) {
                         ForEach(0..<6, id: \.self) { index in
@@ -52,7 +52,8 @@ struct Profile: View {
             
             HStack {
                 Text("Personalization")
-                    .fontWeight(.heavy)              .font(.system(size: 23))
+                    .fontWeight(.heavy)              
+                    .font(.system(size: 23))
                     .padding([.leading], 20)
                 
                 Spacer()
@@ -141,7 +142,7 @@ private func scaleValue(geometry: GeometryProxy) -> CGFloat {
     let midPoint = UIScreen.main.bounds.width / 2
     let viewFrame = geometry.frame(in: .global)
     let distance = abs(midPoint - viewFrame.midX)
-    let scale = max(1.0 - distance / 1000, 0.9) // Adjust 500 and 0.9 as needed
+    let scale = max(1.0 - distance / 1000, 0.9)
     return scale
 }
 #Preview {
