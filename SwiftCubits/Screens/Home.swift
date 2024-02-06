@@ -35,7 +35,7 @@ struct Home: View {
                 
                 //Search Textfield and search button
                 HStack(spacing: 0) {
-                     TextField("Search files...", text: $searchPrompt)
+                    TextField("Search files...", text: $searchPrompt)
                         .disableAutocorrection(true)
                         .font(.system(size: 16))
                         .padding([.leading], 15)
@@ -63,7 +63,7 @@ struct Home: View {
                             )
                                 .fill(Color("CustomGray")))
                     }
-                     
+                    
                 }
                 .padding([.horizontal], 20)
                 
@@ -79,81 +79,81 @@ struct Home: View {
                 //two recent creations
                 HStack {
                     //first creation is the demo shape
-                        Button(action: {
-                                    print("Main Button Tapped")
-                                }) {
-                                    VStack {
-                                        Image("demoShape")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 131, height: 98)
-                                            .padding(.top)
-                                        Spacer()
+                    Button(action: {
+                        print("Main Button Tapped")
+                    }) {
+                        VStack {
+                            Image("demoShape")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 131, height: 98)
+                                .padding(.top)
+                            Spacer()
+                        }
+                        .frame(width: 163, height: 163)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .overlay(
+                            VStack {
+                                Spacer()
+                                HStack {
+                                    Text("13 MB")
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                    Button(action: {
+                                        print("Nested Button Tapped")
+                                    }) {
+                                        Image("horizontaldots")
+                                            .frame(width: 24, height: 24)
                                     }
-                                    .frame(width: 163, height: 163)
-                                    .background(Color.white)
-                                    .cornerRadius(10)
-                                    .overlay(
-                                        VStack {
-                                            Spacer()
-                                            HStack {
-                                                Text("13 MB")
-                                                    .foregroundColor(.black)
-                                                Spacer()
-                                                Button(action: {
-                                                    print("Nested Button Tapped")
-                                                }) {
-                                                    Image("horizontaldots")
-                                                        .frame(width: 24, height: 24)
-                                                }
-                                            }
-                                            .padding([.leading, .bottom, .trailing])
-                                        }
-                                    )
+                                }
+                                .padding([.leading, .bottom, .trailing])
                             }
-                                .shadow(color: .gray, radius: 5, x:0, y:0)
-                                .padding(.leading, 20)
-                                .padding(.trailing, 10)
+                        )
+                    }
+                    .shadow(color: .gray, radius: 5, x:0, y:0)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 10)
                     
                     Spacer()
                     // second creation with skull shape
                     Button(action: {
-                                print("Main Button Tapped")
-                            }) {
-                                VStack {
-                                    Image("skullShape")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 131, height: 98)
-                                        .padding(.top)
-                                    Spacer()
-                                }
-                                .frame(width: 163, height: 163) // Square frame
-                                .background(Color.white)
-                                .cornerRadius(10)
-                                .overlay(
-                                    VStack {
-                                        Spacer()
-                                        HStack {
-                                            Text("36 MB")
-                                                .foregroundColor(.black)
-                                            Spacer()
-                                            Button(action: {
-                                                print("Nested Button Tapped")
-                                            }) {
-                                                Image("horizontaldots")
-                                                    .frame(width: 24, height: 24)
-                                            }
-                                        }
-                                        .padding([.leading, .bottom, .trailing])
-                                    }
-                                )
+                        print("Main Button Tapped")
+                    }) {
+                        VStack {
+                            Image("skullShape")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 131, height: 98)
+                                .padding(.top)
+                            Spacer()
                         }
-                            .shadow(color: .gray, radius: 5, x:0, y:0)
-                            .padding(.trailing, 20)
-                            .padding(.leading, 10)
+                        .frame(width: 163, height: 163) // Square frame
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .overlay(
+                            VStack {
+                                Spacer()
+                                HStack {
+                                    Text("36 MB")
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                    Button(action: {
+                                        print("Nested Button Tapped")
+                                    }) {
+                                        Image("horizontaldots")
+                                            .frame(width: 24, height: 24)
+                                    }
+                                }
+                                .padding([.leading, .bottom, .trailing])
+                            }
+                        )
                     }
-                          
+                    .shadow(color: .gray, radius: 5, x:0, y:0)
+                    .padding(.trailing, 20)
+                    .padding(.leading, 10)
+                }
+                
                 //sub heading
                 HStack {
                     Text("Uploads")
@@ -167,164 +167,164 @@ struct Home: View {
                 // uploads
                 //3D Model Picture
                 Button(action: {
-                            // Action for the main button
-                            print("Main Button Tapped")
-                        }) {
+                    // Action for the main button
+                    print("Main Button Tapped")
+                }) {
+                    HStack {
+                        Image("uploadicon")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 65.0)
+                            .padding([.top, .leading, .bottom])
+                        
+                        VStack {
                             HStack {
-                                Image("uploadicon")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 50, height: 65.0)
-                                    .padding([.top, .leading, .bottom])
-                                
-                                VStack {
-                                    HStack {
-                                        Text("3D Model Picture")
-                                            .bold()
-                                            .font(.system(size: 16))
-                                            .foregroundColor(.black)
-                                        Spacer()
-                                    }
-                                    HStack{
-                                        Text("5.4 MB")
-                                            .font(.system(size: 14))
-                                            .foregroundColor(.gray)
-                                        Text("Upload Complete")
-                                            .font(.system(size: 14))
-                                            .foregroundColor(.green)
-                                        Spacer()
-                                    }
-                                }
-                                
+                                Text("3D Model Picture")
+                                    .bold()
+                                    .font(.system(size: 16))
+                                    .foregroundColor(.black)
                                 Spacer()
                             }
-                            .frame(width: 342, height: 65)
-                            .background(Color("CustomGray"))
-                            .cornerRadius(10)
-                            .overlay(
-                                HStack {
-                                    Spacer()
-                                    Button(action: {
-                                        print("Nested Button Tapped")
-                                    }) {
-                                        Image("verticaldots")
-                                            .frame(width: 24, height: 24)
-                                            .padding(.trailing)
-                                }
-                                }
-                            )
+                            HStack{
+                                Text("5.4 MB")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.gray)
+                                Text("Upload Complete")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.green)
+                                Spacer()
+                            }
                         }
-                        .padding(.vertical, 10.0)
+                        
+                        Spacer()
+                    }
+                    .frame(width: 342, height: 65)
+                    .background(Color("CustomGray"))
+                    .cornerRadius(10)
+                    .overlay(
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                print("Nested Button Tapped")
+                            }) {
+                                Image("verticaldots")
+                                    .frame(width: 24, height: 24)
+                                    .padding(.trailing)
+                            }
+                        }
+                    )
+                }
+                .padding(.vertical, 10.0)
                 
                 //Mountain
                 Button(action: {
-                            // Action for the main button
-                            print("Main Button Tapped")
-                        }) {
+                    // Action for the main button
+                    print("Main Button Tapped")
+                }) {
+                    HStack {
+                        Image("uploadicon")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 65.0)
+                            .padding([.top, .leading, .bottom])
+                        
+                        VStack {
                             HStack {
-                                Image("uploadicon")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 50, height: 65.0)
-                                    .padding([.top, .leading, .bottom])
-                                
-                                VStack {
-                                    HStack {
-                                        Text("Mountain")
-                                            .bold()
-                                            .font(.system(size: 16))
-                                            .foregroundColor(.black)
-                                        Spacer()
-                                    }
-                                    HStack{
-                                        Text("2.3 MB")
-                                            .font(.system(size: 14))
-                                            .foregroundColor(.gray)
-                                        Text("Upload Complete")
-                                            .font(.system(size: 14))
-                                            .foregroundColor(.green)
-                                        Spacer()
-                                    }
-                                }
-                                
+                                Text("Mountain")
+                                    .bold()
+                                    .font(.system(size: 16))
+                                    .foregroundColor(.black)
                                 Spacer()
                             }
-                            .frame(width: 342, height: 65)
-                            .background(Color("CustomGray"))
-                            .cornerRadius(10)
-                            .overlay(
-                                HStack {
-                                    Spacer()
-                                    Button(action: {
-                                        print("Nested Button Tapped")
-                                    }) {
-                                        Image("verticaldots")
-                                            .frame(width: 24, height: 24)
-                                            .padding(.trailing)
-                                }
-                                }
-                            )
+                            HStack{
+                                Text("2.3 MB")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.gray)
+                                Text("Upload Complete")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.green)
+                                Spacer()
+                            }
                         }
+                        
+                        Spacer()
+                    }
+                    .frame(width: 342, height: 65)
+                    .background(Color("CustomGray"))
+                    .cornerRadius(10)
+                    .overlay(
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                print("Nested Button Tapped")
+                            }) {
+                                Image("verticaldots")
+                                    .frame(width: 24, height: 24)
+                                    .padding(.trailing)
+                            }
+                        }
+                    )
+                }
                 
                 .padding(.vertical, 10.0)
                 
                 //Human Figure
                 Button(action: {
-                            // Action for the main button
-                            print("Main Button Tapped")
-                        }) {
+                    // Action for the main button
+                    print("Main Button Tapped")
+                }) {
+                    HStack {
+                        Image("uploadicon")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 65.0)
+                            .padding([.top, .leading, .bottom])
+                        
+                        VStack {
                             HStack {
-                                Image("uploadicon")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 50, height: 65.0)
-                                    .padding([.top, .leading, .bottom])
-                                
-                                VStack {
-                                    HStack {
-                                        Text("Human Figure")
-                                            .bold()
-                                            .font(.system(size: 16))
-                                            .foregroundColor(.black)
-                                        Spacer()
-                                    }
-                                    HStack{
-                                        Text("7.2 MB")
-                                            .font(.system(size: 14))
-                                            .foregroundColor(.gray)
-                                        Text("Upload Complete")
-                                            .font(.system(size: 14))
-                                            .foregroundColor(.green)
-                                        Spacer()
-                                    }
-                                }
-                                
+                                Text("Human Figure")
+                                    .bold()
+                                    .font(.system(size: 16))
+                                    .foregroundColor(.black)
                                 Spacer()
                             }
-                            .frame(width: 342, height: 65)
-                            .background(Color("CustomGray"))
-                            .cornerRadius(10)
-                            .overlay(
-                                HStack {
-                                    Spacer()
-                                    Button(action: {
-                                        print("Nested Button Tapped")
-                                    }) {
-                                        Image("verticaldots")
-                                            .frame(width: 24, height: 24)
-                                            .padding(.trailing)
-                                }
-                                }
-                            )
+                            HStack{
+                                Text("7.2 MB")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.gray)
+                                Text("Upload Complete")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.green)
+                                Spacer()
+                            }
                         }
+                        
+                        Spacer()
+                    }
+                    .frame(width: 342, height: 65)
+                    .background(Color("CustomGray"))
+                    .cornerRadius(10)
+                    .overlay(
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                print("Nested Button Tapped")
+                            }) {
+                                Image("verticaldots")
+                                    .frame(width: 24, height: 24)
+                                    .padding(.trailing)
+                            }
+                        }
+                    )
+                }
                 
                 .padding(.vertical, 10.0)
-
+                
                 
             }
-        }
-        }
+        }.padding(.bottom, 55)
     }
+}
 
 #Preview {
     Home()

@@ -29,6 +29,7 @@ struct Build: View{
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top)
+                .padding(.leading, 20)
             Section {
                 Text("File should be OBJ, STL, or AMF")
                     .opacity(0.5)
@@ -83,9 +84,59 @@ struct Build: View{
                 Text("Uploads")
                     .font(.title)
                     .fontWeight(.bold)
-                    .padding(.top)
                 
+                Button(action: {
+                    // Action for the main button
+                    print("Main Button Tapped")
+                }) {
+                    HStack {
+                        Image("uploadicon")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 65.0)
+                            .padding([.top, .leading, .bottom])
+                        
+                        VStack {
+                            HStack {
+                                Text("Mountain")
+                                    .bold()
+                                    .font(.system(size: 16))
+                                    .foregroundColor(.black)
+                                Spacer()
+                            }
+                            HStack{
+                                Text("2.3 MB")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.gray)
+                                Text("Upload Complete")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.green)
+                                Spacer()
+                            }
+                        }
+                        
+                        Spacer()
+                    }
+                    .frame(width: 342, height: 65)
+                    .background(Color("CustomGray"))
+                    .cornerRadius(10)
+                    .overlay(
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                print("Nested Button Tapped")
+                            }) {
+                                Image("verticaldots")
+                                    .frame(width: 24, height: 24)
+                                    .padding(.trailing)
+                            }
+                        }
+                    )
+                }
                 
+                .padding(.vertical, 10.0)
+                
+               
                 
                 
                 // Display the list of uploaded files using the ObservableObject's data
@@ -97,8 +148,19 @@ struct Build: View{
                 
                 //.frame(maxWidth: .infinity, alignment: .leading)
                 Spacer()
+            }.padding(.top)
+                .padding(.leading, 20)
+
+            NavigationLink {
+                Instructions()
+            } label: {
+                Image(systemName: "cube.transparent")
+                    .foregroundColor(Color(.customGray))
             }
-            .padding()
+            .padding(.bottom, 55)
+            .padding(.leading, 20)
+            .imageScale(.large)
+            .font(.system(size: 25))
             
         }
     }

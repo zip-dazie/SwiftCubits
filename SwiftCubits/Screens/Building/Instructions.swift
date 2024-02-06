@@ -21,10 +21,9 @@ struct Instructions: View {
                         .foregroundColor(.gray)
                         .opacity(0.25)
                         .shadow(color:.black, radius: 3, x: 0, y:-1)
-                    Text("Instructions")
                 }
             }
-        }
+        }.padding(.bottom, 55)
         
     }
 }
