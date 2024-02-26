@@ -322,7 +322,7 @@ struct Home: View {
                 
                 
             }
-        }.padding(.bottom, 55)
+        }.padding(.bottom, 53)
     }
 }
 

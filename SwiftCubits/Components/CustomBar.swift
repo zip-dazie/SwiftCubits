@@ -9,11 +9,6 @@ import SwiftUI
 
 
 
-enum Views{
-    case home
-    case profile
-    case build
-}
 struct CustomBar: View {
     @Binding var selectedTab: Views
     

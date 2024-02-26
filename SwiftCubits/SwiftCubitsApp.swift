@@ -12,11 +12,11 @@ import Firebase
 @main
 struct SwiftCubitsApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+    var tabSelection = TabSelection()
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            //.environmentObject(UploadedFilesModel()) // For local Caching
+            ContentView(tabSelection: tabSelection)
+            .environmentObject(UploadedFilesModel()) // For local Caching
         }
     }
 }
