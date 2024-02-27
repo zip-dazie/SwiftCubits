@@ -87,10 +87,10 @@ struct Build: View {
                     if uploadedFilesModel.files.isEmpty {
                         Spacer(minLength: 20) 
                     } else {
-                        ForEach(uploadedFilesModel.files, id: \.self) { url in
-                            NavigationLink(destination: PreInstructions(name: url.deletingPathExtension().lastPathComponent)) {
-                                UploadedFileRow(url: url)
-                            }
+                        ForEach(uploadedFilesModel.files, id: \.self) { url in //TODO: ADJUST THIS TO FIT PREVIOUS BEHAVIORS OF PREINSTRUCTIONS
+//                            NavigationLink(destination: PreInstructions(name: url.deletingPathExtension().lastPathComponent)) {
+//                                UploadedFileRow(url: url)
+//                            }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
