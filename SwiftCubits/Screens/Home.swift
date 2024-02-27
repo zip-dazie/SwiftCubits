@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Home: View {
-    
+    @State private var preInstructionsView = false
     @State private var searchPrompt: String = ""
     
     var body: some View {
@@ -81,6 +81,8 @@ struct Home: View {
                     //first creation is the demo shape
                     Button(action: {
                         print("Main Button Tapped")
+                        preInstructionsView = true;
+                        
                     }) {
                         VStack {
                             Image("demoShape")
@@ -114,6 +116,11 @@ struct Home: View {
                     .shadow(color: .gray, radius: 5, x:0, y:0)
                     .padding(.leading, 20)
                     .padding(.trailing, 10)
+                    .fullScreenCover(isPresented: $preInstructionsView, content:{
+                        NavigationView{
+                            PreInstructions(preInstructionsView: $preInstructionsView)
+                        }
+                    })
                     
                     Spacer()
                     // second creation with skull shape

@@ -16,7 +16,7 @@ struct Instructions: View {
                         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }
                     Spacer()
-                    Model()
+                    //Model() TODO: RE ADD MODEL RENDER AFTER DETERMINING HOW FILE RETRIEVAL WORKS
                     Rectangle()
                         .foregroundColor(.gray)
                         .opacity(0.25)
