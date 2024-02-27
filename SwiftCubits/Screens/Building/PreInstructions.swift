@@ -11,6 +11,10 @@ import UIKit
 import Foundation
 
 struct PreInstructions: View{
+    @Binding var preInstructionsView: Bool
+    //TODO: programmatically assign name to preinstructions
+    //private var shapeName: String
+    
     @State var primarySCNScene = SingleCubitView()
     @State private var sheetView = false
     
@@ -25,9 +29,9 @@ struct PreInstructions: View{
                     .fontWeight(.heavy)
                     .font(.system(size:30))
                     .padding()
-                Image(systemName: "square.and.arrow.down.fill") //TODO: Replace with asteroid
+                Image("demoShape") //TODO: Replace with asteroid
                     .resizable()
-                    .frame(width:200, height:200)
+                    .frame(width:330, height:300)
                 
             }
             .padding([.bottom], 20)
@@ -78,5 +82,5 @@ struct GridItemView: View {
 }
 
 #Preview(){
-    PreInstructions()
+    PreInstructions(preInstructionsView: .constant(true))
 }
