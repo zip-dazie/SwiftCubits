@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346C21F62B8DD588003CC59D /* SingleCubitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C21F22B8DD587003CC59D /* SingleCubitView.swift */; };
+		346C21F72B8DD588003CC59D /* PreInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C21F32B8DD588003CC59D /* PreInstructions.swift */; };
+		346C21F82B8DD588003CC59D /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C21F42B8DD588003CC59D /* SheetView.swift */; };
 		346D24BD2B62846A00B06FBE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24BC2B62846A00B06FBE /* UserManager.swift */; };
 		346D24BF2B628F0000B06FBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 346D24BE2B628F0000B06FBE /* GoogleService-Info.plist */; };
 		346D24C22B6290EF00B06FBE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 346D24C12B6290EF00B06FBE /* FirebaseAnalytics */; };
@@ -19,14 +22,11 @@
 		346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24D32B663E4200B06FBE /* AuthViewModel.swift */; };
 		346D24D62B663EB900B06FBE /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24D52B663EB900B06FBE /* AuthDataResultModel.swift */; };
 		346D24D82B663F0A00B06FBE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24D72B663F0A00B06FBE /* SettingsViewModel.swift */; };
-		B570A8FD2B79EF5D0095ED37 /* PreInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A8FC2B79EF5D0095ED37 /* PreInstructions.swift */; };
 		B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A8FE2B79F9860095ED37 /* GlobalStates.swift */; };
 		B570A9012B7B32440095ED37 /* UploadedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A9002B7B32440095ED37 /* UploadedFiles.swift */; };
-		B570A9032B7C08200095ED37 /* GOAT.obj in Resources */ = {isa = PBXBuildFile; fileRef = B570A9022B7C08200095ED37 /* GOAT.obj */; };
 		B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573C83A2B57B305006F79E1 /* CustomBar.swift */; };
 		B580C1FE2B5B79F400F77808 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580C1FD2B5B79F400F77808 /* Model.swift */; };
 		B591B7FC2B69C9A400482649 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B591B7FB2B69C9A400482649 /* Guide.swift */; };
-		B591B7FE2B6C65DA00482649 /* MC1_1.obj in Resources */ = {isa = PBXBuildFile; fileRef = B591B7FD2B6C65DA00482649 /* MC1_1.obj */; };
 		B5993E392B48AB2300D2E79C /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5993E382B48AB2300D2E79C /* Build.swift */; };
 		B5F0EF552B46083C002F9F8B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0EF542B46083C002F9F8B /* Home.swift */; };
 		B5F0EF572B460852002F9F8B /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0EF562B460852002F9F8B /* Instructions.swift */; };
@@ -58,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		346C21F22B8DD587003CC59D /* SingleCubitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCubitView.swift; sourceTree = "<group>"; };
+		346C21F32B8DD588003CC59D /* PreInstructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreInstructions.swift; sourceTree = "<group>"; };
+		346C21F42B8DD588003CC59D /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		346D24BC2B62846A00B06FBE /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		346D24BE2B628F0000B06FBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		346D24C82B62925400B06FBE /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -65,14 +68,11 @@
 		346D24D32B663E4200B06FBE /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		346D24D52B663EB900B06FBE /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		346D24D72B663F0A00B06FBE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		B570A8FC2B79EF5D0095ED37 /* PreInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreInstructions.swift; sourceTree = "<group>"; };
 		B570A8FE2B79F9860095ED37 /* GlobalStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStates.swift; sourceTree = "<group>"; };
 		B570A9002B7B32440095ED37 /* UploadedFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedFiles.swift; sourceTree = "<group>"; };
-		B570A9022B7C08200095ED37 /* GOAT.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GOAT.obj; path = "../../../../Marching Cubes/GOAT.obj"; sourceTree = "<group>"; };
 		B573C83A2B57B305006F79E1 /* CustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBar.swift; sourceTree = "<group>"; };
 		B580C1FD2B5B79F400F77808 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B591B7FB2B69C9A400482649 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
-		B591B7FD2B6C65DA00482649 /* MC1_1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MC1_1.obj; path = "../../../../Marching Cubes/MC/MC1_1.obj"; sourceTree = "<group>"; };
 		B5993E382B48AB2300D2E79C /* Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		B5F0EF542B46083C002F9F8B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B5F0EF562B460852002F9F8B /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
@@ -148,8 +148,6 @@
 		B56900642B612750000D2AB9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				B570A9022B7C08200095ED37 /* GOAT.obj */,
-				B591B7FD2B6C65DA00482649 /* MC1_1.obj */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -176,8 +174,10 @@
 		B5B8D0E52B48B9B0005FE67B /* Building */ = {
 			isa = PBXGroup;
 			children = (
+				346C21F32B8DD588003CC59D /* PreInstructions.swift */,
+				346C21F42B8DD588003CC59D /* SheetView.swift */,
+				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
 				B5F0EF562B460852002F9F8B /* Instructions.swift */,
-				B570A8FC2B79EF5D0095ED37 /* PreInstructions.swift */,
 			);
 			path = Building;
 			sourceTree = "<group>";
@@ -374,9 +374,7 @@
 			files = (
 				B5F8E4722B46036B008CB69C /* Preview Assets.xcassets in Resources */,
 				B5F8E46F2B46036B008CB69C /* Assets.xcassets in Resources */,
-				B570A9032B7C08200095ED37 /* GOAT.obj in Resources */,
 				346D24BF2B628F0000B06FBE /* GoogleService-Info.plist in Resources */,
-				B591B7FE2B6C65DA00482649 /* MC1_1.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +401,9 @@
 			files = (
 				B5F8E46D2B46036A008CB69C /* ContentView.swift in Sources */,
 				B5F0EF592B460A32002F9F8B /* Profile.swift in Sources */,
+				346C21F82B8DD588003CC59D /* SheetView.swift in Sources */,
+				346C21F72B8DD588003CC59D /* PreInstructions.swift in Sources */,
+				346C21F62B8DD588003CC59D /* SingleCubitView.swift in Sources */,
 				346D24BD2B62846A00B06FBE /* UserManager.swift in Sources */,
 				346D24D62B663EB900B06FBE /* AuthDataResultModel.swift in Sources */,
 				B5993E392B48AB2300D2E79C /* Build.swift in Sources */,
@@ -413,7 +414,6 @@
 				346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */,
 				346D24CC2B629F6A00B06FBE /* AuthManager.swift in Sources */,
 				B580C1FE2B5B79F400F77808 /* Model.swift in Sources */,
-				B570A8FD2B79EF5D0095ED37 /* PreInstructions.swift in Sources */,
 				B591B7FC2B69C9A400482649 /* Guide.swift in Sources */,
 				B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */,
 				B5F8E46B2B46036A008CB69C /* SwiftCubitsApp.swift in Sources */,
