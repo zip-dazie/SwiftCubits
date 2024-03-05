@@ -15,30 +15,45 @@ struct SheetView: View {
 //    let imageName: String
     
     @State var primarySCNScene:SCNScene?
-//    let sceneURL:URL
-//   primarySCNScene = (url: "Test_0-1.scn")
+    @State var foundURL: Bool = false
+    @State var url:URL?
+    
+    //test
+    let fileManager = FileManager.default
     
     init(){
-        let sceneURL = Bundle.main.url(forResource: "Test_0-1", withExtension: "scn", subdirectory: "Cubits")
-        
-        if (sceneURL == nil){
-            //TODO: Error handling
-            print("Scene file not found")
+        if let sceneURL = Bundle.main.url(forResource: "CubitTest", withExtension: "scn", subdirectory: "CubitsCatalog.scnassets") {
+            // Load the scene
+            if let loadedScene = try? SCNScene(url: sceneURL, options: nil) {
+                // Assign the loaded scene to the @State property
+                primarySCNScene = loadedScene
+                foundURL = true
+                url = sceneURL
+            }
+            else {
+                print("Failed to load scene")
+                foundURL = false;
+            
+                url = nil
+            }
+        } else {
+            print("Scene file not found in bundle")
+            foundURL = false;
+
+            url = nil
         }
-        
-        do{
-            try primarySCNScene = SCNScene(url: sceneURL!)
-        }
-        catch{
-            //TODO: error handling
-            print("Not found")
-        }
-        
     }
     
     var body: some View {
         VStack{
-            Text("x")
+            
+            if(foundURL == true){
+                Text("found")
+                Text(url!.absoluteString)
+            }
+            else if(foundURL == false){
+                Text("false")
+            }
             SingleCubitView(scene: $primarySCNScene)
                 .frame(width: 350, height:350)
         }
