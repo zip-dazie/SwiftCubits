@@ -12,14 +12,16 @@ import SceneKit
 struct SheetView: View {
     //TODO: Programmatically pass in the names of the correct cubit piece here
     
+    //file properties
     @State var primarySCNScene:SCNScene?
     @State var foundURL: Bool = false
     @State var url:URL?
-    
     @State var scene:SCNScene? = .init(named: "CTest.scn")
     
-    //test
     let fileManager = FileManager.default
+    
+    //view properties
+    @State var isVerticalLook: Bool = false
     
     init(){
         findValidFile()
@@ -46,17 +48,18 @@ struct SheetView: View {
         }
     }
     
+    
     func findValidFile(){
         //
         if let sceneURL = Bundle.main.url(forResource: "CubitTest", withExtension: "scn", subdirectory: "CubitsCatalog.scnassets"){
 //            print(sceneURL.absoluteString)
             if(FileManager.default.fileExists(atPath: sceneURL.absoluteString)){
-//                print(sceneURL.absoluteString)
+//                TODO: ERROR HANDLING
+//                    print(sceneURL.absoluteString)
             }
             else{
 //                print("File not found")
             }
-                
         }
         else{
 //            print("File not found")
@@ -64,9 +67,48 @@ struct SheetView: View {
         
     }
     
+    @ViewBuilder
+    func headerView() -> some View {
+        HStack{
+            Button{
+                
+            } label: {
+                Image(systemName: "arrow.left")
+                    .font(.system(size: 16, weight: .heavy))
+                    .foregroundColor(.white)
+                    .frame(width: 42, height: 42)
+                    .background{
+                        RoundedRectangle(cornerRadius: 15, style: .continuous)
+                            .fill(.black.opacity(0.5))
+                    }
+                    .padding()
+                
+                Spacer()
+                
+                Button {
+                    withAnimation(.easeInOut){isVerticalLook.toggle()}
+                } label: {
+                    Image(systemName: "arrow.left.and.right.righttriangle.left.righttriangle.right.fill")
+                        .font(.system(size: 16, weight: .heavy))
+                        .foregroundColor(.white)
+                        .rotationEffect(.init(degrees: isVerticalLook ? 0 : 90))
+                        .frame(width:42, height: 42)
+                        .background{
+                            RoundedRectangle(cornerRadius:15, style: .continuous)
+                                .fill(.black.opacity(0.5))
+                            
+                        }
+                        .padding()
+                }
+                
+            }
+        }
+    }
     
     var body: some View {
         VStack{
+            headerView()
+            
             SingleCubitView(scene: $scene)
                 .frame(width: 350, height:350)
         }
