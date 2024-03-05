@@ -15,7 +15,9 @@ struct PreInstructions: View{
     //TODO: programmatically assign name to preinstructions
     //private var shapeName: String
     
-    @State var primarySCNScene = SingleCubitView()
+//    @State var primarySCNScene = SingleCubitView()
+    
+    
     @State private var sheetView = false
     
     
@@ -75,7 +77,8 @@ struct GridItemView: View {
                 .padding()
         }
         .sheet(isPresented: $isPresented) {
-            SheetView(imageName: imageName)
+            //TODO: programmatically pass into sheet view the required cubit piece
+            SheetView()
                 .presentationDetents([.medium, .medium])
         }
     }
