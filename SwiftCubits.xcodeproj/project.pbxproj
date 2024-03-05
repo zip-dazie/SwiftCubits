@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		344FA4A52B96EE8C0025D4DB /* Cubits in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A42B96EE8C0025D4DB /* Cubits */; };
 		344FA4A92B96FB880025D4DB /* CubitsCatalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */; };
+		344FA4AB2B970F850025D4DB /* CTest.scn in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4AA2B970F850025D4DB /* CTest.scn */; };
 		346C21F62B8DD588003CC59D /* SingleCubitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C21F22B8DD587003CC59D /* SingleCubitView.swift */; };
 		346C21F72B8DD588003CC59D /* PreInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C21F32B8DD588003CC59D /* PreInstructions.swift */; };
 		346C21F82B8DD588003CC59D /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C21F42B8DD588003CC59D /* SheetView.swift */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		344FA4A42B96EE8C0025D4DB /* Cubits */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cubits; path = SwiftCubits/Cubits; sourceTree = SOURCE_ROOT; };
 		344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = CubitsCatalog.scnassets; sourceTree = "<group>"; };
+		344FA4AA2B970F850025D4DB /* CTest.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = CTest.scn; path = SwiftCubits/Cubits/CTest.scn; sourceTree = "<group>"; };
 		346C21F22B8DD587003CC59D /* SingleCubitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCubitView.swift; sourceTree = "<group>"; };
 		346C21F32B8DD588003CC59D /* PreInstructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreInstructions.swift; sourceTree = "<group>"; };
 		346C21F42B8DD588003CC59D /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		B5F8E45E2B46036A008CB69C = {
 			isa = PBXGroup;
 			children = (
+				344FA4AA2B970F850025D4DB /* CTest.scn */,
 				B5F8E4692B46036A008CB69C /* SwiftCubits */,
 				B5F8E47A2B46036B008CB69C /* SwiftCubitsTests */,
 				B5F8E4842B46036B008CB69C /* SwiftCubitsUITests */,
@@ -378,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344FA4AB2B970F850025D4DB /* CTest.scn in Resources */,
 				344FA4A92B96FB880025D4DB /* CubitsCatalog.scnassets in Resources */,
 				344FA4A52B96EE8C0025D4DB /* Cubits in Resources */,
 				B5F8E4722B46036B008CB69C /* Preview Assets.xcassets in Resources */,

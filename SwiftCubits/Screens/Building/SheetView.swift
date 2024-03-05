@@ -11,17 +11,19 @@ import SceneKit
 
 struct SheetView: View {
     //TODO: Programmatically pass in the names of the correct cubit piece here
-    //var cubitName: String;
-//    let imageName: String
     
     @State var primarySCNScene:SCNScene?
     @State var foundURL: Bool = false
     @State var url:URL?
     
+    @State var scene:SCNScene? = .init(named: "CTest.scn")
+    
     //test
     let fileManager = FileManager.default
     
     init(){
+        findValidFile()
+        
         if let sceneURL = Bundle.main.url(forResource: "CubitTest", withExtension: "scn", subdirectory: "CubitsCatalog.scnassets") {
             // Load the scene
             if let loadedScene = try? SCNScene(url: sceneURL, options: nil) {
@@ -44,17 +46,28 @@ struct SheetView: View {
         }
     }
     
+    func findValidFile(){
+        //
+        if let sceneURL = Bundle.main.url(forResource: "CubitTest", withExtension: "scn", subdirectory: "CubitsCatalog.scnassets"){
+//            print(sceneURL.absoluteString)
+            if(FileManager.default.fileExists(atPath: sceneURL.absoluteString)){
+//                print(sceneURL.absoluteString)
+            }
+            else{
+//                print("File not found")
+            }
+                
+        }
+        else{
+//            print("File not found")
+        }
+        
+    }
+    
+    
     var body: some View {
         VStack{
-            
-            if(foundURL == true){
-                Text("found")
-                Text(url!.absoluteString)
-            }
-            else if(foundURL == false){
-                Text("false")
-            }
-            SingleCubitView(scene: $primarySCNScene)
+            SingleCubitView(scene: $scene)
                 .frame(width: 350, height:350)
         }
         Text("This is the subscreen for test")
