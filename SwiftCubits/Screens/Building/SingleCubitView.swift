@@ -13,7 +13,7 @@ struct SingleCubitView: UIViewRepresentable {
     @Binding var scene: SCNScene?
     func makeUIView(context: Context) -> SCNView {
         let sceneView = SCNView(frame: CGRect(x: 0, y: 0, width: 400, height: 300))
-        sceneView.allowsCameraControl = true
+        sceneView.allowsCameraControl = false
         sceneView.autoenablesDefaultLighting = true
         sceneView.scene = scene
         sceneView.backgroundColor = .clear

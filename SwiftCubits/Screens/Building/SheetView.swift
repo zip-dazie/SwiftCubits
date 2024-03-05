@@ -150,11 +150,32 @@ struct SheetView: View {
                 }
         }
         .frame(height:20)
+        .onChange(of: offset, perform: {newValue in
+            rotateObject(animate: offset == .zero)
+        })
         .animation(.easeInOut(duration: 0.4), value: offset == .zero)
     }
     
     //Rotation of object
-    
+    func rotateObject(animate: Bool = false){
+        if (animate){
+            SCNTransaction.begin()
+            SCNTransaction.animationDuration = 0.4
+        }
+        
+        let newAngle = Float((offset * .pi) / 180)
+        
+        if(isVerticalLook){
+            scene?.rootNode.childNode(withName: "Root", recursively: true)?.eulerAngles.x = (newAngle)
+        }
+        else{
+            scene?.rootNode.childNode(withName: "Root", recursively: true)?.eulerAngles.y = (newAngle)
+        }
+        
+        if (animate){
+            SCNTransaction.commit()
+        }
+    }
     
     var body: some View {
         VStack{
@@ -165,6 +186,7 @@ struct SheetView: View {
                 .frame(width: 350, height:300)
             CustomSeeker()
                 .padding(.bottom, 30)
+                .zIndex(-10)
             
             
         }
