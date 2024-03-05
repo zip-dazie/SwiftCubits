@@ -22,7 +22,7 @@ struct SheetView: View {
     
     //view properties
     @State var isVerticalLook: Bool = false
-    
+    @GestureState var offset: CGFloat = 0
     init(){
         findValidFile()
         
@@ -139,10 +139,22 @@ struct SheetView: View {
                             .fill(.white)
                     }
                     .offset(y: -12)
+                    .offset(x: offset)
+                    .gesture(
+                        DragGesture()
+                            .updating($offset, body: { value, out, _ in
+                                out = value.location.x - 20
+                            })
+                    )
+                    
                 }
         }
         .frame(height:20)
+        .animation(.easeInOut(duration: 0.4), value: offset == .zero)
     }
+    
+    //Rotation of object
+    
     
     var body: some View {
         VStack{
@@ -153,6 +165,8 @@ struct SheetView: View {
                 .frame(width: 350, height:300)
             CustomSeeker()
                 .padding(.bottom, 30)
+            
+            
         }
         .padding()
         
