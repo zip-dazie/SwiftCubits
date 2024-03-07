@@ -18,7 +18,6 @@ struct SingleCubitView: UIViewRepresentable {
         //MARK: temporary true
         sceneView.allowsCameraControl = false
         
-        
         sceneView.autoenablesDefaultLighting = true
         sceneView.scene = scene
         sceneView.backgroundColor = .clear
@@ -39,14 +38,12 @@ struct SingleCubitView: UIViewRepresentable {
         return sceneView
     }
     
-    
     func updateUIView(_ uiView: SCNView, context: Context){
         //MARK: temporary gray (should be white)
-        uiView.backgroundColor = .gray
+        uiView.backgroundColor = .white
     }
 }
 
 #Preview{
-//    let mockScene = SCNScene.init(named:"Test_0-1")
     SingleCubitView(scene: .constant(SCNScene.init(named:"Cubit_2-1.scn")))
 }

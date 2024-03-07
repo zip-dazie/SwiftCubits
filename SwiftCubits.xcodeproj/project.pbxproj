@@ -161,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
+				346C21F42B8DD588003CC59D /* SheetView.swift */,
 				34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */,
 			);
 			path = CubitView;
@@ -197,7 +198,6 @@
 			children = (
 				34D93A052B99A225003DB825 /* CubitView */,
 				346C21F32B8DD588003CC59D /* PreInstructions.swift */,
-				346C21F42B8DD588003CC59D /* SheetView.swift */,
 				B5F0EF562B460852002F9F8B /* Instructions.swift */,
 			);
 			path = Building;

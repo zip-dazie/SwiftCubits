@@ -11,12 +11,11 @@ import SceneKit
 
 struct SheetView: View {
     //TODO: Programmatically pass in the names of the correct cubit piece here
-    
     @State var objectName:String!
     @State var primarySCNScene:SCNScene?
     @State var foundURL: Bool = false
     @State var url:URL?
-    @State var scene:SCNScene? = .init(named: "Cubit_2-2.scn")
+    @State var scene:SCNScene? = .init(named: "Cubit_2-1.scn")
     
     
     let fileManager = FileManager.default
@@ -104,7 +103,6 @@ struct SheetView: View {
                 
             }
         }
-//        .padding(.top, 60)
     }
     
     @ViewBuilder
