@@ -9,10 +9,11 @@ import Foundation
 import SwiftUI
 import SceneKit
 
-struct SingleCubitView: UIViewRepresentable {
+struct Cubit_2_2_View: UIViewRepresentable {
     @Binding var scene: SCNScene?
     func makeUIView(context: Context) -> SCNView {
         let sceneView = SCNView(frame: CGRect(x: 0, y: 0, width: 400, height: 300))
+
         sceneView.allowsCameraControl = false
         sceneView.autoenablesDefaultLighting = true
         sceneView.scene = scene
@@ -28,7 +29,7 @@ struct SingleCubitView: UIViewRepresentable {
             scene.rootNode.addChildNode(cameraNode)
             sceneView.pointOfView = cameraNode
             // Set the initial position of the camera
-            cameraNode.position = SCNVector3(x: 0, y: 1, z: 10)
+            cameraNode.position = SCNVector3(x: 0, y: 5, z: 30)
             
         }
         return sceneView
@@ -36,11 +37,11 @@ struct SingleCubitView: UIViewRepresentable {
     
     
     func updateUIView(_ uiView: SCNView, context: Context){
-//        uiView.backgroundColor = .black
+        //MARK: temporary gray (should be white)
+        uiView.backgroundColor = .gray
     }
 }
 
 #Preview{
-//    let mockScene = SCNScene.init(named:"Test_0-1")
-    SingleCubitView(scene: .constant(SCNScene.init(named:"CTest.scn")))
+    SingleCubitView(scene: .constant(SCNScene.init(named:"Cubit_2-2.scn")))
 }

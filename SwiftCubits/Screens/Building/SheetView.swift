@@ -12,19 +12,19 @@ import SceneKit
 struct SheetView: View {
     //TODO: Programmatically pass in the names of the correct cubit piece here
     
-    //file properties
-    @State var nameOfObject:String?
+    @State var objectName:String!
     @State var primarySCNScene:SCNScene?
     @State var foundURL: Bool = false
     @State var url:URL?
-    @State var scene:SCNScene? = .init(named: "CTest.scn")
+    @State var scene:SCNScene? = .init(named: "Cubit_2-2.scn")
+    
     
     let fileManager = FileManager.default
     
     //view properties
     @State var isVerticalLook: Bool = false
     @GestureState var offset: CGFloat = 0
-    init(){
+    init(objectName:String){
         findValidFile()
         
         if let sceneURL = Bundle.main.url(forResource: "CubitTest", withExtension: "scn", subdirectory: "CubitsCatalog.scnassets") {
@@ -44,10 +44,9 @@ struct SheetView: View {
         } else {
             print("Scene file not found in bundle")
             foundURL = false;
-
+            
             url = nil
         }
-        
     }
     
     
@@ -198,5 +197,5 @@ struct SheetView: View {
 }
 
 #Preview(){
-    SheetView()
+    SheetView(objectName: ("Cubit_2-2.scn") )
 }
