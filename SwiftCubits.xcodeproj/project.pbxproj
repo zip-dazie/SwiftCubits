@@ -28,7 +28,6 @@
 		34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */; };
 		34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */; };
 		34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */; };
-		34D93A0D2B99B1E5003DB825 /* tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D93A0C2B99B1E5003DB825 /* tester.swift */; };
 		B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A8FE2B79F9860095ED37 /* GlobalStates.swift */; };
 		B570A9012B7B32440095ED37 /* UploadedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A9002B7B32440095ED37 /* UploadedFiles.swift */; };
 		B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573C83A2B57B305006F79E1 /* CustomBar.swift */; };
@@ -81,7 +80,6 @@
 		34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_2_2_View.swift; sourceTree = "<group>"; };
 		34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-1.scn"; path = "SwiftCubits/Cubits/Cubit_2-1.scn"; sourceTree = "<group>"; };
 		34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-2.scn"; path = "SwiftCubits/Cubits/Cubit_2-2.scn"; sourceTree = "<group>"; };
-		34D93A0C2B99B1E5003DB825 /* tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tester.swift; sourceTree = "<group>"; };
 		B570A8FE2B79F9860095ED37 /* GlobalStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStates.swift; sourceTree = "<group>"; };
 		B570A9002B7B32440095ED37 /* UploadedFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedFiles.swift; sourceTree = "<group>"; };
 		B573C83A2B57B305006F79E1 /* CustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBar.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
 				346C21F42B8DD588003CC59D /* SheetView.swift */,
 				34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */,
-				34D93A0C2B99B1E5003DB825 /* tester.swift */,
 			);
 			path = CubitView;
 			sourceTree = "<group>";
@@ -441,7 +438,6 @@
 				346D24BD2B62846A00B06FBE /* UserManager.swift in Sources */,
 				346D24D62B663EB900B06FBE /* AuthDataResultModel.swift in Sources */,
 				B5993E392B48AB2300D2E79C /* Build.swift in Sources */,
-				34D93A0D2B99B1E5003DB825 /* tester.swift in Sources */,
 				B5F0EF552B46083C002F9F8B /* Home.swift in Sources */,
 				B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */,
 				346D24C92B62925400B06FBE /* AuthView.swift in Sources */,

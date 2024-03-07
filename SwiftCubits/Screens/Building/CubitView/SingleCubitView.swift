@@ -45,5 +45,5 @@ struct SingleCubitView: UIViewRepresentable {
 }
 
 #Preview{
-    SingleCubitView(scene: .constant(SCNScene.init(named:"Cubit_2-2.scn")))
+    SingleCubitView(scene: .constant(SCNScene.init(named:"Cubit_2-1.scn")))
 }
