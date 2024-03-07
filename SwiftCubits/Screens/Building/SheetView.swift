@@ -13,6 +13,7 @@ struct SheetView: View {
     //TODO: Programmatically pass in the names of the correct cubit piece here
     
     //file properties
+    @State var nameOfObject:String?
     @State var primarySCNScene:SCNScene?
     @State var foundURL: Bool = false
     @State var url:URL?
@@ -46,6 +47,7 @@ struct SheetView: View {
 
             url = nil
         }
+        
     }
     
     

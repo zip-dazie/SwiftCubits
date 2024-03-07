@@ -31,15 +31,7 @@ struct SingleCubitView: UIViewRepresentable {
             cameraNode.position = SCNVector3(x: 0, y: 1, z: 10)
             
         }
-        
-
-        
-        
-        
         return sceneView
-        
-        
-        
     }
     
     
