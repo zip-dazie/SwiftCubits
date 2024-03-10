@@ -76,9 +76,10 @@ struct GridItemView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .padding()
         }
+        //["Cubit_2-1", "Cubit_2-2", "Cubit_5-4", "Cubit_6-2", "Cubit_7-1"]
         .sheet(isPresented: $isPresented) {
             //TODO: programmatically pass into sheet view the required cubit piece
-            Cubit_6_2_View(objectName: "CTest.scn")
+            Cubit_7_1_View(objectName: "CTest.scn")
                 .presentationDetents([.medium, .medium])
         }
     }
