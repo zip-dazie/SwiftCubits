@@ -27,6 +27,8 @@
 		346D24D82B663F0A00B06FBE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24D72B663F0A00B06FBE /* SettingsViewModel.swift */; };
 		34D48EA32B9D5DB200908C49 /* Cubit_5_4_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */; };
 		34D48EA52B9D65E900908C49 /* Cubit_5-4.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EA42B9D65E900908C49 /* Cubit_5-4.scn */; };
+		34D48EA72B9D6D6F00908C49 /* Cubit_6-2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EA62B9D6D6F00908C49 /* Cubit_6-2_View.swift */; };
+		34D48EA92B9D6E6E00908C49 /* Cubit_6-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EA82B9D6E6E00908C49 /* Cubit_6-2.scn */; };
 		34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */; };
 		34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */; };
 		34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */; };
@@ -81,6 +83,8 @@
 		346D24D72B663F0A00B06FBE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_5_4_View.swift; sourceTree = "<group>"; };
 		34D48EA42B9D65E900908C49 /* Cubit_5-4.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_5-4.scn"; path = "SwiftCubits/Cubits/Cubit_5-4.scn"; sourceTree = "<group>"; };
+		34D48EA62B9D6D6F00908C49 /* Cubit_6-2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cubit_6-2_View.swift"; sourceTree = "<group>"; };
+		34D48EA82B9D6E6E00908C49 /* Cubit_6-2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_6-2.scn"; path = "SwiftCubits/Cubits/Cubit_6-2.scn"; sourceTree = "<group>"; };
 		34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_2_2_View.swift; sourceTree = "<group>"; };
 		34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-1.scn"; path = "SwiftCubits/Cubits/Cubit_2-1.scn"; sourceTree = "<group>"; };
 		34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-2.scn"; path = "SwiftCubits/Cubits/Cubit_2-2.scn"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				346C21F42B8DD588003CC59D /* SheetView.swift */,
 				34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */,
 				34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */,
+				34D48EA62B9D6D6F00908C49 /* Cubit_6-2_View.swift */,
 			);
 			path = CubitView;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 		B5F8E45E2B46036A008CB69C = {
 			isa = PBXGroup;
 			children = (
+				34D48EA82B9D6E6E00908C49 /* Cubit_6-2.scn */,
 				34D48EA42B9D65E900908C49 /* Cubit_5-4.scn */,
 				34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */,
 				34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */,
@@ -404,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D48EA92B9D6E6E00908C49 /* Cubit_6-2.scn in Resources */,
 				34D48EA52B9D65E900908C49 /* Cubit_5-4.scn in Resources */,
 				34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */,
 				34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */,
@@ -451,6 +458,7 @@
 				B5F0EF572B460852002F9F8B /* Instructions.swift in Sources */,
 				346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */,
 				346D24CC2B629F6A00B06FBE /* AuthManager.swift in Sources */,
+				34D48EA72B9D6D6F00908C49 /* Cubit_6-2_View.swift in Sources */,
 				34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */,
 				B580C1FE2B5B79F400F77808 /* Model.swift in Sources */,
 				B591B7FC2B69C9A400482649 /* Guide.swift in Sources */,
