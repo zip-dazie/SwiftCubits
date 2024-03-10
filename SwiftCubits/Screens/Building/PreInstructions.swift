@@ -78,7 +78,7 @@ struct GridItemView: View {
         }
         .sheet(isPresented: $isPresented) {
             //TODO: programmatically pass into sheet view the required cubit piece
-            SheetView(objectName: "CTest.scn")
+            Cubit_5_4_View(objectName: "CTest.scn")
                 .presentationDetents([.medium, .medium])
         }
     }

@@ -25,6 +25,8 @@
 		346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24D32B663E4200B06FBE /* AuthViewModel.swift */; };
 		346D24D62B663EB900B06FBE /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24D52B663EB900B06FBE /* AuthDataResultModel.swift */; };
 		346D24D82B663F0A00B06FBE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D24D72B663F0A00B06FBE /* SettingsViewModel.swift */; };
+		34D48EA32B9D5DB200908C49 /* Cubit_5_4_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */; };
+		34D48EA52B9D65E900908C49 /* Cubit_5-4.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EA42B9D65E900908C49 /* Cubit_5-4.scn */; };
 		34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */; };
 		34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */; };
 		34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */; };
@@ -77,6 +79,8 @@
 		346D24D32B663E4200B06FBE /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		346D24D52B663EB900B06FBE /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		346D24D72B663F0A00B06FBE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_5_4_View.swift; sourceTree = "<group>"; };
+		34D48EA42B9D65E900908C49 /* Cubit_5-4.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_5-4.scn"; path = "SwiftCubits/Cubits/Cubit_5-4.scn"; sourceTree = "<group>"; };
 		34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_2_2_View.swift; sourceTree = "<group>"; };
 		34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-1.scn"; path = "SwiftCubits/Cubits/Cubit_2-1.scn"; sourceTree = "<group>"; };
 		34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-2.scn"; path = "SwiftCubits/Cubits/Cubit_2-2.scn"; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
 				346C21F42B8DD588003CC59D /* SheetView.swift */,
 				34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */,
+				34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */,
 			);
 			path = CubitView;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 		B5F8E45E2B46036A008CB69C = {
 			isa = PBXGroup;
 			children = (
+				34D48EA42B9D65E900908C49 /* Cubit_5-4.scn */,
 				34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */,
 				34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */,
 				344FA4AA2B970F850025D4DB /* CTest.scn */,
@@ -398,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D48EA52B9D65E900908C49 /* Cubit_5-4.scn in Resources */,
 				34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */,
 				34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */,
 				344FA4AB2B970F850025D4DB /* CTest.scn in Resources */,
@@ -449,6 +456,7 @@
 				B591B7FC2B69C9A400482649 /* Guide.swift in Sources */,
 				B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */,
 				B5F8E46B2B46036A008CB69C /* SwiftCubitsApp.swift in Sources */,
+				34D48EA32B9D5DB200908C49 /* Cubit_5_4_View.swift in Sources */,
 				346D24D82B663F0A00B06FBE /* SettingsViewModel.swift in Sources */,
 				B570A9012B7B32440095ED37 /* UploadedFiles.swift in Sources */,
 			);

@@ -1,69 +1,21 @@
 //
-//  SheetView.swift
+//  Cubit_5_4_View.swift
 //  SwiftCubits
 //
-//  Created by Arthur Chan on 2/25/24.
+//  Created by Arthur Chan on 3/09/24.
 //
 
 import Foundation
 import SwiftUI
 import SceneKit
 
-struct Cubit_2_2_View: View {
+struct Cubit_5_4_View: View {
     //TODO: Programmatically pass in the names of the correct cubit piece here
-    @State var objectName:String!
-    @State var primarySCNScene:SCNScene?
-    @State var foundURL: Bool = false
-    @State var url:URL?
-    @State var scene:SCNScene? = .init(named: "Cubit_2-2.scn")
-    
-    
-    let fileManager = FileManager.default
-    
+    @State var scene:SCNScene? = .init(named: "Cubit_5-4.scn")
     //view properties
     @State var isVerticalLook: Bool = false
     @GestureState var offset: CGFloat = 0
     init(objectName:String){
-        findValidFile()
-        
-        if let sceneURL = Bundle.main.url(forResource: "CubitTest", withExtension: "scn", subdirectory: "CubitsCatalog.scnassets") {
-            // Load the scene
-            if let loadedScene = try? SCNScene(url: sceneURL, options: nil) {
-                // Assign the loaded scene to the @State property
-                primarySCNScene = loadedScene
-                foundURL = true
-                url = sceneURL
-            }
-            else {
-                print("Failed to load scene")
-                foundURL = false;
-            
-                url = nil
-            }
-        } else {
-            print("Scene file not found in bundle")
-            foundURL = false;
-            
-            url = nil
-        }
-    }
-    
-    
-    func findValidFile(){
-        //
-        if let sceneURL = Bundle.main.url(forResource: "CubitTest", withExtension: "scn", subdirectory: "CubitsCatalog.scnassets"){
-//            print(sceneURL.absoluteString)
-            if(FileManager.default.fileExists(atPath: sceneURL.absoluteString)){
-//                TODO: ERROR HANDLING
-//                    print(sceneURL.absoluteString)
-            }
-            else{
-//                print("File not found")
-            }
-        }
-        else{
-//            print("File not found")
-        }
         
     }
     
@@ -195,5 +147,5 @@ struct Cubit_2_2_View: View {
 }
 
 #Preview(){
-    SheetView(objectName: ("Cubit_2-2.scn") )
+    SheetView(objectName: ("Cubit_5-4.scn") )
 }
