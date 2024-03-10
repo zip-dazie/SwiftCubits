@@ -147,5 +147,5 @@ struct Cubit_7_1_View: View {
 }
 
 #Preview(){
-    SheetView(objectName: ("Cubit_5-4.scn") )
+    SheetView(objectName: ("Cubit_7-1.scn") )
 }

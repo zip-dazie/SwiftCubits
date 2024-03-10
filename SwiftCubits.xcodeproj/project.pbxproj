@@ -169,15 +169,23 @@
 			path = ScreenModels;
 			sourceTree = "<group>";
 		};
-		34D93A052B99A225003DB825 /* CubitView */ = {
+		34D48EB02B9D7CD100908C49 /* IndividualCubit_T */ = {
 			isa = PBXGroup;
 			children = (
-				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
-				346C21F42B8DD588003CC59D /* SheetView.swift */,
 				34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */,
 				34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */,
 				34D48EAE2B9D6F7200908C49 /* Cubit_6_2_View.swift */,
 				34D48EAC2B9D6F4900908C49 /* Cubit_7_1_View.swift */,
+			);
+			path = IndividualCubit_T;
+			sourceTree = "<group>";
+		};
+		34D93A052B99A225003DB825 /* CubitView */ = {
+			isa = PBXGroup;
+			children = (
+				34D48EB02B9D7CD100908C49 /* IndividualCubit_T */,
+				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
+				346C21F42B8DD588003CC59D /* SheetView.swift */,
 			);
 			path = CubitView;
 			sourceTree = "<group>";

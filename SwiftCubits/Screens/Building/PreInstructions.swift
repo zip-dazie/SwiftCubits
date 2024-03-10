@@ -13,16 +13,10 @@ import Foundation
 struct PreInstructions: View{
     @Binding var preInstructionsView: Bool
     //TODO: programmatically assign name to preinstructions
-    //private var shapeName: String
-    
-//    @State var primarySCNScene = SingleCubitView()
-    
-    
     @State private var sheetView = false
-    
-    
     //MARK: Programmatically pass these into our grid
     let cubitNames = ["Cubit_2-1", "Cubit_2-2", "Cubit_5-4", "Cubit_6-2", "Cubit_7-1"]
+    var counter: Int = 0
     
     var body: some View {
         ScrollView{
@@ -46,8 +40,33 @@ struct PreInstructions: View{
                 Spacer()
             }
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                            ForEach(cubitNames, id:\.self) { imageName in
-                                GridItemView(imageName: imageName) //TODO: See griditemView
+                            ForEach(cubitNames, id: \.self) { imageName in
+                                //MARK: Temporary fix for programmatic passing
+                                if(imageName == "Cubit_2-1"){
+                                    GridItemView(imageName: imageName){
+                                        SheetView(objectName:imageName)
+                                    }
+                                }
+                                else if(imageName == "Cubit_2-2"){
+                                    GridItemView(imageName: imageName){
+                                        Cubit_2_2_View(objectName:imageName)
+                                    }
+                                }
+                                else if(imageName == "Cubit_5-4"){
+                                    GridItemView(imageName: imageName){
+                                        Cubit_5_4_View(objectName:imageName)
+                                    }
+                                }
+                                else if(imageName == "Cubit_6-2"){
+                                    GridItemView(imageName: imageName){
+                                        Cubit_6_2_View(objectName:imageName)
+                                    }
+                                }
+                                else if(imageName == "Cubit_7-1"){
+                                    GridItemView(imageName: imageName){
+                                        Cubit_7_1_View(objectName:imageName)
+                                    }
+                                }
                             }
             }
             .padding()
@@ -56,9 +75,10 @@ struct PreInstructions: View{
 }
 
 //TODO: PASS INTO THIS OBJECT THE RELATIVE MODEL
-struct GridItemView: View {
+struct GridItemView<Content>: View where Content: View{
     @State private var isPresented = false
     let imageName: String
+    let content: () -> Content
     
     var body: some View {
         Button(action: {
@@ -76,10 +96,9 @@ struct GridItemView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .padding()
         }
-        //["Cubit_2-1", "Cubit_2-2", "Cubit_5-4", "Cubit_6-2", "Cubit_7-1"]
         .sheet(isPresented: $isPresented) {
             //TODO: programmatically pass into sheet view the required cubit piece
-            Cubit_7_1_View(objectName: "CTest.scn")
+            content()
                 .presentationDetents([.medium, .medium])
         }
     }
