@@ -62,6 +62,7 @@ struct PreInstructions: View{
                                         Cubit_6_2_View(objectName:imageName)
                                     }
                                 }
+                                //MARK: Unknown render error
                                 else if(imageName == "Cubit_7-1"){
                                     GridItemView(imageName: imageName){
                                         Cubit_7_1_View(objectName:imageName)
