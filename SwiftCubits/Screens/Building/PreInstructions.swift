@@ -22,7 +22,7 @@ struct PreInstructions: View{
     
     
     //MARK: Programmatically pass these into our grid
-    let imageNames = ["image1", "image2", "image3", "image4"]
+    let cubitNames = ["Cubit_2-1", "Cubit_2-2", "Cubit_5-4", "Cubit_6-2", "Cubit_7-1"]
     
     var body: some View {
         ScrollView{
@@ -46,7 +46,7 @@ struct PreInstructions: View{
                 Spacer()
             }
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                            ForEach(imageNames, id:\.self) { imageName in
+                            ForEach(cubitNames, id:\.self) { imageName in
                                 GridItemView(imageName: imageName) //TODO: See griditemView
                             }
             }
@@ -76,9 +76,10 @@ struct GridItemView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .padding()
         }
+        //["Cubit_2-1", "Cubit_2-2", "Cubit_5-4", "Cubit_6-2", "Cubit_7-1"]
         .sheet(isPresented: $isPresented) {
             //TODO: programmatically pass into sheet view the required cubit piece
-            SheetView()
+            Cubit_7_1_View(objectName: "CTest.scn")
                 .presentationDetents([.medium, .medium])
         }
     }
