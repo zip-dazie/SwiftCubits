@@ -22,8 +22,8 @@ struct FileDetailView: View {
 }
 struct Build: View {
     @State private var importing = false
-    @EnvironmentObject var uploadedFilesModel: UploadedFilesModel
-
+    @State private var preInstructionsView = false
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
@@ -67,42 +67,123 @@ struct Build: View {
                 )
                 .frame(height: 250)
                 .padding(25)
-                .fileImporter(
-                    isPresented: $importing,
-                    allowedContentTypes: [UTType.content],
-                    allowsMultipleSelection: false
-                ) { result in
-                    switch result {
-                    case .success(let urls):
-                        uploadedFilesModel.files.append(contentsOf: urls)
-                    case .failure(let error):
-                        print("Error selecting file: \(error.localizedDescription)")
-                    }
-                }
                 
+                
+                /*
+                 HStack {
+                     //first creation is the demo shape
+                     Button(action: {
+                         print("Main Button Tapped")
+                         preInstructionsView = true;
+                         
+                     }) {
+                         VStack {
+                             Image("demoShape")
+                                 .resizable()
+                                 .aspectRatio(contentMode: .fit)
+                                 .frame(width: 131, height: 98)
+                                 .padding(.top)
+                             Spacer()
+                         }
+                         .frame(width: 163, height: 163)
+                         .background(Color.white)
+                         .cornerRadius(10)
+                         .overlay(
+                             VStack {
+                                 Spacer()
+                                 HStack {
+                                     Text("13 MB")
+                                         .foregroundColor(.black)
+                                     Spacer()
+                                     Button(action: {
+                                         print("Nested Button Tapped")
+                                     }) {
+                                         Image("horizontaldots")
+                                             .frame(width: 24, height: 24)
+                                     }
+                                 }
+                                 .padding([.leading, .bottom, .trailing])
+                             }
+                         )
+                     }
+                     .shadow(color: .gray, radius: 5, x:0, y:0)
+                     .padding(.leading, 20)
+                     .padding(.trailing, 10)
+                     .fullScreenCover(isPresented: $preInstructionsView, content:{
+                         NavigationView{
+                             PreInstructions(preInstructionsView: $preInstructionsView)
+                         }
+                     })
+                 */
                 Section {
                     Text("Uploads")
+                        .bold()
+                    Button(action: {
+                        preInstructionsView = true
+                   
+                    }) {
+                        HStack {
+                            Image("uploadicon")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 50, height: 65.0)
+                                .padding([.top, .leading, .bottom])
+                            
+                            VStack {
+                                HStack {
+                                    Text("Asteroid")
+                                        .bold()
+                                        .font(.system(size: 16))
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                }
+                                HStack{
+                                    Text("2.3 MB")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.gray)
+                                    Text("Upload Complete")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.green)
+                                    Spacer()
+                                }
+                            }
+                            
+                            Spacer()
+                        }
+                        .frame(width: 342, height: 65)
+                        .background(Color("CustomGray"))
+                        .cornerRadius(10)
+                        .overlay(
+                            HStack {
+                                Spacer()
+                                Button(action: {
+                                    print("Nested Button Tapped")
+                                }) {
+                                    Image("verticaldots")
+                                        .frame(width: 24, height: 24)
+                                        .padding(.trailing)
+                                }
+                            }
+                        )
+                    }
+                    .padding(.vertical, 10.0)
                         .font(.title)
                         .fontWeight(.bold)
-                    if uploadedFilesModel.files.isEmpty {
-                        Spacer(minLength: 20) 
-                    } else {
-                        ForEach(uploadedFilesModel.files, id: \.self) { url in //TODO: ADJUST THIS TO FIT PREVIOUS BEHAVIORS OF PREINSTRUCTIONS
-//                            NavigationLink(destination: PreInstructions(name: url.deletingPathExtension().lastPathComponent)) {
-//                                UploadedFileRow(url: url)
-//                            }
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                }
-                .padding(.top)
-                .padding(.leading, 20)
-
-                Spacer(minLength: 55)
+                        .fullScreenCover(isPresented: $preInstructionsView, content:{
+                            NavigationView{
+                                PreInstructions(preInstructionsView: $preInstructionsView)
+                            }
+                        })
+                    
+                }                    .padding(.leading, 20)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
-        .padding(.bottom, 55)
+        .padding(.top)
+        
+        Spacer(minLength: 55)
     }
+    
 }
 
 struct UploadedFileRow: View {

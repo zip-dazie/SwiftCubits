@@ -16,7 +16,6 @@ struct SwiftCubitsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(tabSelection: tabSelection)
-            .environmentObject(UploadedFilesModel()) // For local Caching
         }
     }
 }

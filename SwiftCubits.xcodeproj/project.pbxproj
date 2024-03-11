@@ -37,6 +37,12 @@
 		B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A8FE2B79F9860095ED37 /* GlobalStates.swift */; };
 		B570A9012B7B32440095ED37 /* UploadedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A9002B7B32440095ED37 /* UploadedFiles.swift */; };
 		B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573C83A2B57B305006F79E1 /* CustomBar.swift */; };
+		B57A90372B9ED80F00C8A768 /* Layer_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90362B9ED80F00C8A768 /* Layer_1.swift */; };
+		B57A90392B9ED82100C8A768 /* Layer_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90382B9ED82100C8A768 /* Layer_2.swift */; };
+		B57A903B2B9ED82E00C8A768 /* Layer_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903A2B9ED82E00C8A768 /* Layer_3.swift */; };
+		B57A903D2B9ED86B00C8A768 /* Layer_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903C2B9ED86B00C8A768 /* Layer_4.swift */; };
+		B57A903F2B9ED8D500C8A768 /* Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903E2B9ED8D500C8A768 /* Complete.swift */; };
+		B57A90412B9EE54A00C8A768 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90402B9EE54A00C8A768 /* NextButton.swift */; };
 		B580C1FE2B5B79F400F77808 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580C1FD2B5B79F400F77808 /* Model.swift */; };
 		B591B7FC2B69C9A400482649 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B591B7FB2B69C9A400482649 /* Guide.swift */; };
 		B5993E392B48AB2300D2E79C /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5993E382B48AB2300D2E79C /* Build.swift */; };
@@ -95,6 +101,12 @@
 		B570A8FE2B79F9860095ED37 /* GlobalStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStates.swift; sourceTree = "<group>"; };
 		B570A9002B7B32440095ED37 /* UploadedFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedFiles.swift; sourceTree = "<group>"; };
 		B573C83A2B57B305006F79E1 /* CustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBar.swift; sourceTree = "<group>"; };
+		B57A90362B9ED80F00C8A768 /* Layer_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_1.swift; sourceTree = "<group>"; };
+		B57A90382B9ED82100C8A768 /* Layer_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_2.swift; sourceTree = "<group>"; };
+		B57A903A2B9ED82E00C8A768 /* Layer_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_3.swift; sourceTree = "<group>"; };
+		B57A903C2B9ED86B00C8A768 /* Layer_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_4.swift; sourceTree = "<group>"; };
+		B57A903E2B9ED8D500C8A768 /* Complete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complete.swift; sourceTree = "<group>"; };
+		B57A90402B9EE54A00C8A768 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		B580C1FD2B5B79F400F77808 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B591B7FB2B69C9A400482649 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		B5993E382B48AB2300D2E79C /* Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
@@ -196,6 +208,7 @@
 				B580C1FD2B5B79F400F77808 /* Model.swift */,
 				B570A8FE2B79F9860095ED37 /* GlobalStates.swift */,
 				B570A9002B7B32440095ED37 /* UploadedFiles.swift */,
+				B57A90402B9EE54A00C8A768 /* NextButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -214,6 +227,11 @@
 				34D93A052B99A225003DB825 /* CubitView */,
 				346C21F32B8DD588003CC59D /* PreInstructions.swift */,
 				B5F0EF562B460852002F9F8B /* Instructions.swift */,
+				B57A90362B9ED80F00C8A768 /* Layer_1.swift */,
+				B57A90382B9ED82100C8A768 /* Layer_2.swift */,
+				B57A903A2B9ED82E00C8A768 /* Layer_3.swift */,
+				B57A903C2B9ED86B00C8A768 /* Layer_4.swift */,
+				B57A903E2B9ED8D500C8A768 /* Complete.swift */,
 			);
 			path = Building;
 			sourceTree = "<group>";
@@ -451,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57A90412B9EE54A00C8A768 /* NextButton.swift in Sources */,
 				B5F8E46D2B46036A008CB69C /* ContentView.swift in Sources */,
 				B5F0EF592B460A32002F9F8B /* Profile.swift in Sources */,
 				346C21F82B8DD588003CC59D /* SheetView.swift in Sources */,
@@ -461,15 +480,20 @@
 				346D24D62B663EB900B06FBE /* AuthDataResultModel.swift in Sources */,
 				B5993E392B48AB2300D2E79C /* Build.swift in Sources */,
 				B5F0EF552B46083C002F9F8B /* Home.swift in Sources */,
+				B57A90392B9ED82100C8A768 /* Layer_2.swift in Sources */,
 				B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */,
+				B57A903D2B9ED86B00C8A768 /* Layer_4.swift in Sources */,
 				346D24C92B62925400B06FBE /* AuthView.swift in Sources */,
 				B5F0EF572B460852002F9F8B /* Instructions.swift in Sources */,
 				346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */,
+				B57A903F2B9ED8D500C8A768 /* Complete.swift in Sources */,
 				346D24CC2B629F6A00B06FBE /* AuthManager.swift in Sources */,
 				34D48EAD2B9D6F4900908C49 /* Cubit_7_1_View.swift in Sources */,
+				B57A90372B9ED80F00C8A768 /* Layer_1.swift in Sources */,
 				34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */,
 				B580C1FE2B5B79F400F77808 /* Model.swift in Sources */,
 				B591B7FC2B69C9A400482649 /* Guide.swift in Sources */,
+				B57A903B2B9ED82E00C8A768 /* Layer_3.swift in Sources */,
 				B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */,
 				B5F8E46B2B46036A008CB69C /* SwiftCubitsApp.swift in Sources */,
 				34D48EA32B9D5DB200908C49 /* Cubit_5_4_View.swift in Sources */,
