@@ -47,19 +47,8 @@ struct PreInstructions: View{
                     }
                 }
                 .padding()
-                NavigationLink(destination: Layer_1()) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 15)
-                            .foregroundColor(Color.customPurple)
-                            .frame(width: 100, height: 50)
-                            .shadow(color: .gray, radius: 5, x: 0, y: 5)
-                        Image(systemName: "arrow.right")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 20, height: 50)
-                            .foregroundColor(.white)
-                    }
-                }
+                NavButton(destination:Layer_1(), icon: "rightArrow", linkText: "Next")
+
                 .padding(.leading, 20)
             }
             

@@ -6,37 +6,33 @@
 //
 
 import SwiftUI
-
 struct Layer_1: View {
     var body: some View {
-        //TODO: spacing, and anchoring to bottom
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    Text("Layer 1").navigationBarBackButtonHidden(true)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(.top)
-                        .padding(.leading, 20)
-                    NavigationLink(destination: Layer_2()) {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 15)
-                                .foregroundColor(Color.customPurple)
-                                .frame(width: 100, height: 50)
-                                .shadow(color: .gray, radius: 5, x: 0, y: 5)
-                            Image(systemName: "arrow.right")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 20, height: 50)
-                                .foregroundColor(.white)
-                        }
+                VStack {
+                    HStack {
+                        Color.clear.frame(width: 30, height: 30)
+                        Spacer()
+                        Text("Layer 1")
+                            .font(.system(size: 27, weight: .bold))
+                            .frame(maxWidth: .infinity, alignment: .center)
+
+                        Spacer()
+                        NavButton(destination: Layer_2(), icon: "rightArrow")
+                            .frame(width: 30, height: 30, alignment: .trailing)
                     }
-                    .padding(.leading, 20) 
+                    .padding()
+                    Text("Layer 1 Content")
+                        .padding()
                 }
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }
+
 
 
 #Preview {
