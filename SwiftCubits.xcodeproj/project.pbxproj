@@ -44,7 +44,6 @@
 		B57A903D2B9ED86B00C8A768 /* Layer_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903C2B9ED86B00C8A768 /* Layer_4.swift */; };
 		B57A903F2B9ED8D500C8A768 /* Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903E2B9ED8D500C8A768 /* Complete.swift */; };
 		B57A90432BA0196400C8A768 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90422BA0196400C8A768 /* NavButton.swift */; };
-		B57A90482BA0243600C8A768 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = B57A90472BA0243600C8A768 /* Assets */; };
 		B580C1FE2B5B79F400F77808 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580C1FD2B5B79F400F77808 /* Model.swift */; };
 		B591B7FC2B69C9A400482649 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B591B7FB2B69C9A400482649 /* Guide.swift */; };
 		B5993E392B48AB2300D2E79C /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5993E382B48AB2300D2E79C /* Build.swift */; };
@@ -159,6 +158,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345A1F232BA5B691008F01D5 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B57A90472BA0243600C8A768 /* Assets */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		346D24CA2B629CBB00B06FBE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +276,7 @@
 				B5F8E4842B46036B008CB69C /* SwiftCubitsUITests */,
 				B5F8E4682B46036A008CB69C /* Products */,
 				346D24CD2B662ADB00B06FBE /* Frameworks */,
+				345A1F232BA5B691008F01D5 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -440,7 +448,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				34D48EAB2B9D6F1F00908C49 /* Cubit_7-1.scn in Resources */,
-				B57A90482BA0243600C8A768 /* Assets in Resources */,
 				34D48EA92B9D6E6E00908C49 /* Cubit_6-2.scn in Resources */,
 				34D48EA52B9D65E900908C49 /* Cubit_5-4.scn in Resources */,
 				34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */,
