@@ -31,6 +31,7 @@
 		34D48EAB2B9D6F1F00908C49 /* Cubit_7-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EAA2B9D6F1F00908C49 /* Cubit_7-1.scn */; };
 		34D48EAD2B9D6F4900908C49 /* Cubit_7_1_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EAC2B9D6F4900908C49 /* Cubit_7_1_View.swift */; };
 		34D48EAF2B9D6F7200908C49 /* Cubit_6_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EAE2B9D6F7200908C49 /* Cubit_6_2_View.swift */; };
+		34D48EB32B9D835400908C49 /* Layers in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EB22B9D835400908C49 /* Layers */; };
 		34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */; };
 		34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */; };
 		34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */; };
@@ -96,6 +97,7 @@
 		34D48EAA2B9D6F1F00908C49 /* Cubit_7-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_7-1.scn"; path = "SwiftCubits/Cubits/Cubit_7-1.scn"; sourceTree = "<group>"; };
 		34D48EAC2B9D6F4900908C49 /* Cubit_7_1_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_7_1_View.swift; sourceTree = "<group>"; };
 		34D48EAE2B9D6F7200908C49 /* Cubit_6_2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_6_2_View.swift; sourceTree = "<group>"; };
+		34D48EB22B9D835400908C49 /* Layers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Layers; sourceTree = "<group>"; };
 		34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_2_2_View.swift; sourceTree = "<group>"; };
 		34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-1.scn"; path = "SwiftCubits/Cubits/Cubit_2-1.scn"; sourceTree = "<group>"; };
 		34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-2.scn"; path = "SwiftCubits/Cubits/Cubit_2-2.scn"; sourceTree = "<group>"; };
@@ -183,15 +185,23 @@
 			path = ScreenModels;
 			sourceTree = "<group>";
 		};
-		34D93A052B99A225003DB825 /* CubitView */ = {
+		34D48EB02B9D7CD100908C49 /* IndividualCubit_T */ = {
 			isa = PBXGroup;
 			children = (
-				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
-				346C21F42B8DD588003CC59D /* SheetView.swift */,
 				34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */,
 				34D48EA22B9D5DB200908C49 /* Cubit_5_4_View.swift */,
 				34D48EAE2B9D6F7200908C49 /* Cubit_6_2_View.swift */,
 				34D48EAC2B9D6F4900908C49 /* Cubit_7_1_View.swift */,
+			);
+			path = IndividualCubit_T;
+			sourceTree = "<group>";
+		};
+		34D93A052B99A225003DB825 /* CubitView */ = {
+			isa = PBXGroup;
+			children = (
+				34D48EB02B9D7CD100908C49 /* IndividualCubit_T */,
+				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
+				346C21F42B8DD588003CC59D /* SheetView.swift */,
 			);
 			path = CubitView;
 			sourceTree = "<group>";
@@ -275,7 +285,7 @@
 		B5F8E4692B46036A008CB69C /* SwiftCubits */ = {
 			isa = PBXGroup;
 			children = (
-				B57A90472BA0243600C8A768 /* Assets */,
+				34D48EB22B9D835400908C49 /* Layers */,
 				344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */,
 				344FA4A42B96EE8C0025D4DB /* Cubits */,
 				B56900692B61A84C000D2AB9 /* Components */,
@@ -440,6 +450,7 @@
 				344FA4A52B96EE8C0025D4DB /* Cubits in Resources */,
 				B5F8E4722B46036B008CB69C /* Preview Assets.xcassets in Resources */,
 				B5F8E46F2B46036B008CB69C /* Assets.xcassets in Resources */,
+				34D48EB32B9D835400908C49 /* Layers in Resources */,
 				346D24BF2B628F0000B06FBE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

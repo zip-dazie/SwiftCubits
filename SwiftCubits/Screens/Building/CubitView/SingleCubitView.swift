@@ -16,8 +16,7 @@ struct SingleCubitView: UIViewRepresentable {
         
         
         //MARK: temporary true
-        sceneView.allowsCameraControl = false
-        
+        sceneView.allowsCameraControl = true
         sceneView.autoenablesDefaultLighting = true
         sceneView.scene = scene
         sceneView.backgroundColor = .clear
@@ -45,5 +44,5 @@ struct SingleCubitView: UIViewRepresentable {
 }
 
 #Preview{
-    SingleCubitView(scene: .constant(SCNScene.init(named:"Cubit_2-1.scn")))
+    SingleCubitView(scene: .constant(SCNScene.init(named:"Pg1-Layer1.scn")))
 }
