@@ -100,11 +100,6 @@ struct GridItemView<Content>: View where Content: View{
     let content: () -> Content
     
    
-//    init(imageName: String, offsetX: Int, offsetY: Int){
-//        self.imageName = imageName
-//        self.offsetX = offsetX
-//        self.offsetY = offsetY
-//    }
     
     var body: some View {
         Button(action: {
@@ -132,33 +127,7 @@ struct GridItemView<Content>: View where Content: View{
         
     }
 }
-/*
- NavigationStack {
- ScrollView {
- VStack(alignment: .leading, spacing: 20) {
- Text("Layer 1").navigationBarBackButtonHidden(true)
- .font(.title)
- .fontWeight(.bold)
- .padding(.top)
- .padding(.leading, 20)
- NavigationLink(destination: Layer_2()) {
- ZStack {
- RoundedRectangle(cornerRadius: 15)
- .foregroundColor(Color.customPurple)
- .frame(width: 100, height: 50)
- .shadow(color: .gray, radius: 5, x: 0, y: 5)
- Image(systemName: "arrow.right")
- .resizable()
- .aspectRatio(contentMode: .fit)
- .frame(width: 20, height: 50)
- .foregroundColor(.white)
- }
- }
- .padding(.leading, 20)
- }
- }
- }
- */
+
 
 #Preview(){
     PreInstructions(preInstructionsView: .constant(true))
