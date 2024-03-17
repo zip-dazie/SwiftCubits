@@ -16,7 +16,7 @@ struct ContentView: View {
             switch tabSelection.selectedTab {
             case .home:
                 NavigationStack {
-                    Home()
+                    Home() 
                 }
             case .profile:
                 NavigationStack {

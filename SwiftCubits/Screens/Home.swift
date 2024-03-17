@@ -10,7 +10,7 @@ import SwiftUI
 struct Home: View {
     @State private var preInstructionsView = false
     @State private var searchPrompt: String = ""
-    
+
     var body: some View {
         ScrollView{
             
@@ -18,7 +18,8 @@ struct Home: View {
                 // Welcome Text with profile picture
                 HStack{
                     VStack(alignment: .leading) {
-                        Text("Welcome back\n")
+                        Text("Welcome back\n").navigationBarBackButtonHidden(true)
+
                             .font(.system(size:16))
                         
                         Text("Peter!")
