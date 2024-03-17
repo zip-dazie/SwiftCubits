@@ -16,7 +16,7 @@ struct SingleCubitView: UIViewRepresentable {
         
         
         //MARK: temporary true
-        sceneView.allowsCameraControl = true
+        sceneView.allowsCameraControl = false
         sceneView.autoenablesDefaultLighting = true
         sceneView.scene = scene
         sceneView.backgroundColor = .clear

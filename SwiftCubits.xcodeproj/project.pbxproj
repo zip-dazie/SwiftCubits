@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3411E59B2BA6865F00BD971B /* Layer1Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E59A2BA6865F00BD971B /* Layer1Sheet.swift */; };
+		3411E59F2BA68B9700BD971B /* Pg1-Layer6.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3411E59E2BA68B9600BD971B /* Pg1-Layer6.scn */; };
 		344FA4A52B96EE8C0025D4DB /* Cubits in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A42B96EE8C0025D4DB /* Cubits */; };
 		344FA4A92B96FB880025D4DB /* CubitsCatalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */; };
 		344FA4AB2B970F850025D4DB /* CTest.scn in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4AA2B970F850025D4DB /* CTest.scn */; };
@@ -31,7 +33,6 @@
 		34D48EAB2B9D6F1F00908C49 /* Cubit_7-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EAA2B9D6F1F00908C49 /* Cubit_7-1.scn */; };
 		34D48EAD2B9D6F4900908C49 /* Cubit_7_1_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EAC2B9D6F4900908C49 /* Cubit_7_1_View.swift */; };
 		34D48EAF2B9D6F7200908C49 /* Cubit_6_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EAE2B9D6F7200908C49 /* Cubit_6_2_View.swift */; };
-		34D48EB32B9D835400908C49 /* Layers in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EB22B9D835400908C49 /* Layers */; };
 		34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */; };
 		34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */; };
 		34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */; };
@@ -77,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3411E59A2BA6865F00BD971B /* Layer1Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer1Sheet.swift; sourceTree = "<group>"; };
+		3411E59C2BA68AF500BD971B /* Layers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Layers; path = SwiftCubits/Layers; sourceTree = "<group>"; };
+		3411E59E2BA68B9600BD971B /* Pg1-Layer6.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Pg1-Layer6.scn"; path = "SwiftCubits/Layers/Layer1/Pg1-Layer6.scn"; sourceTree = "<group>"; };
 		344FA4A42B96EE8C0025D4DB /* Cubits */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cubits; path = SwiftCubits/Cubits; sourceTree = SOURCE_ROOT; };
 		344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = CubitsCatalog.scnassets; sourceTree = "<group>"; };
 		344FA4AA2B970F850025D4DB /* CTest.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = CTest.scn; path = SwiftCubits/Cubits/CTest.scn; sourceTree = "<group>"; };
@@ -158,6 +162,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3411E5992BA6862200BD971B /* Layer1View */ = {
+			isa = PBXGroup;
+			children = (
+				3411E59A2BA6865F00BD971B /* Layer1Sheet.swift */,
+			);
+			path = Layer1View;
+			sourceTree = "<group>";
+		};
 		345A1F232BA5B691008F01D5 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +218,7 @@
 		34D93A052B99A225003DB825 /* CubitView */ = {
 			isa = PBXGroup;
 			children = (
+				3411E5992BA6862200BD971B /* Layer1View */,
 				34D48EB02B9D7CD100908C49 /* IndividualCubit_T */,
 				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
 				346C21F42B8DD588003CC59D /* SheetView.swift */,
@@ -265,6 +278,8 @@
 		B5F8E45E2B46036A008CB69C = {
 			isa = PBXGroup;
 			children = (
+				3411E59E2BA68B9600BD971B /* Pg1-Layer6.scn */,
+				3411E59C2BA68AF500BD971B /* Layers */,
 				34D48EAA2B9D6F1F00908C49 /* Cubit_7-1.scn */,
 				34D48EA82B9D6E6E00908C49 /* Cubit_6-2.scn */,
 				34D48EA42B9D65E900908C49 /* Cubit_5-4.scn */,
@@ -447,6 +462,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3411E59F2BA68B9700BD971B /* Pg1-Layer6.scn in Resources */,
 				34D48EAB2B9D6F1F00908C49 /* Cubit_7-1.scn in Resources */,
 				34D48EA92B9D6E6E00908C49 /* Cubit_6-2.scn in Resources */,
 				34D48EA52B9D65E900908C49 /* Cubit_5-4.scn in Resources */,
@@ -457,7 +473,6 @@
 				344FA4A52B96EE8C0025D4DB /* Cubits in Resources */,
 				B5F8E4722B46036B008CB69C /* Preview Assets.xcassets in Resources */,
 				B5F8E46F2B46036B008CB69C /* Assets.xcassets in Resources */,
-				34D48EB32B9D835400908C49 /* Layers in Resources */,
 				346D24BF2B628F0000B06FBE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +506,7 @@
 				346C21F62B8DD588003CC59D /* SingleCubitView.swift in Sources */,
 				346D24BD2B62846A00B06FBE /* UserManager.swift in Sources */,
 				346D24D62B663EB900B06FBE /* AuthDataResultModel.swift in Sources */,
+				3411E59B2BA6865F00BD971B /* Layer1Sheet.swift in Sources */,
 				B5993E392B48AB2300D2E79C /* Build.swift in Sources */,
 				B57A90432BA0196400C8A768 /* NavButton.swift in Sources */,
 				B5F0EF552B46083C002F9F8B /* Home.swift in Sources */,

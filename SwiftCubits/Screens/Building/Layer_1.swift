@@ -7,6 +7,8 @@
 
 import SwiftUI
 struct Layer_1: View {
+    @State private var isLayerPresented = false;
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -23,9 +25,50 @@ struct Layer_1: View {
                             .frame(width: 30, height: 30, alignment: .trailing)
                     }
                     .padding()
-                    Text("Layer 1 Content")
-                        .padding()
+                    
+                    HStack{
+                        Button(action: {
+                            isLayerPresented.toggle();
+                        }){
+                            Image("Layer1")
+                                .offset(y:30)
+                        }
+                    }
+                    .sheet(isPresented:$isLayerPresented){
+                        Layer1Sheet()
+                    }
+                    .padding()
+                    
+                    VStack(){
+                        HStack{
+                            Text("Units")
+                                .bold()
+                                .font(.system(size:20))
+                                .padding([.leading], 20)
+                                
+                            Spacer()
+                        }
+                        
+                        //Cubits pieces
+                        Color("GridColor").opacity(0.28)
+                            .frame(width: 340, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                            
+                        
+                        HStack{
+                            Text("Instructions")
+                                .bold()
+                                .font(.system(size:20))
+                                .padding([.leading], 20)
+                            Spacer()
+                        }
+                        .padding([.top], 10)
+                        
+                    }
+                    .padding([.top], 30)
                 }
+                
+                    
             }
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)

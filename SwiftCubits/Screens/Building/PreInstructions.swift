@@ -86,12 +86,6 @@ struct PreInstructions: View{
     }
 }
 
-struct imageContainer{
-    let imageName: String
-    let offsetX: Int
-    let offsetY: Int
-}
-
 //TODO: PASS INTO THIS OBJECT THE RELATIVE MODEL
 struct GridItemView<Content>: View where Content: View{
     @State private var isPresented = false
