@@ -10,6 +10,8 @@ import SwiftUI
 struct Complete: View {
     var body: some View {
         Text("Congratulations").navigationBarBackButtonHidden(true)
+
+
     }
 }
 

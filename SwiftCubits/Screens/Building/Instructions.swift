@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct Instructions: View {
+    let placeholders = [
+          ModelPlaceholder(label: "6x"),
+          ModelPlaceholder(label: "2x"),
+          ModelPlaceholder(label: "6x"),
+          ModelPlaceholder(label: "4x"),
+          ModelPlaceholder(label: "4x"),
+          ModelPlaceholder(label: "6x")
+      ]
     var body: some View {
         ZStack {
             GeometryReader{ geometry in
@@ -17,17 +25,16 @@ struct Instructions: View {
                     }
                     Spacer()
                     //Model() TODO: RE ADD MODEL RENDER AFTER DETERMINING HOW FILE RETRIEVAL WORKS
-                    Rectangle()
-                        .foregroundColor(.gray)
-                        .opacity(0.25)
-                        .shadow(color:.black, radius: 3, x: 0, y:-1)
-                    Text("Instructions")
+
+                    //DynamicRoundedRectangle(modelPlaceholders: placeholders)
+
                 }
             }
         }.padding(.bottom, 55)
         
     }
 }
+
 
 #Preview {
     Instructions()
