@@ -12,24 +12,30 @@ struct LayerView: View {
     var url: URL?
     var body: some View {
         Button(action: {
-            mainLayer = true
-        }) {
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(lineWidth: 2)
-        //TODO: make clear after adding model
-                .foregroundColor(Color.customPurple)
-                .frame(width: 330, height: 230)
-        }
-        .sheet(isPresented: $mainLayer) {
-            if let url = url {
-                // load model
-            } else {
-                Text("Update in LayerView.swift")
+                    mainLayer = true
+                }) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(lineWidth: 2)
+                            .foregroundColor(Color.customPurple)
+                            .frame(width: 330, height: 230)
+                        
+                        if let url = url {
+                            // TODO: render model, this is a preview not for manipulation
+                            //.frame(width: 330, height: 230)
+                        } else {
+                            Text("Model Preview")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
+                .sheet(isPresented: $mainLayer) {
+                    //TODO: manipulation view
+                    Text("Model rotation view")
+                }
             }
-            
         }
-    }
-}
+
 #Preview {
     LayerView()
 }

@@ -17,7 +17,7 @@ struct InstructionsView: View {
             HStack(alignment: .top, spacing: 0) {
                 Spacer()
                 Text("Instructions")
-                    .font(.system(size: 18)) 
+                    .font(.system(size: 18))
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 10)
@@ -43,11 +43,15 @@ struct InstructionsView: View {
                             selectedURL = url
                             showStep = true
                         }) {
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(lineWidth: 2)
-                            //TODO: make clear when done with importing
-                                .foregroundColor(.purple)
-                                .frame(width: 310, height: 210)
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(lineWidth: 2)
+                                    .foregroundColor(.purple)
+                                    .frame(width: 310, height: 210)
+                                // TODO: render preview of model
+                                    Text("Preview")
+                                    .frame(width: 310, height: 210)
+                            }
                         }
                         .padding(.horizontal)
                     }
@@ -65,7 +69,9 @@ struct InstructionsView: View {
         }
         .sheet(isPresented: $showStep) {
             if let urlToShow = selectedURL {
+                //TODO: implement model manipulation view
                 Text("Displaying model from URL: \(urlToShow.absoluteString)")
+                
             }
         }
     }

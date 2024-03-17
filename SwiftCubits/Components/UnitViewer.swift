@@ -51,8 +51,9 @@ struct ModelPlaceholderView: View {
                           .padding(5),
                 alignment: .topLeading
             )
+            //TODO: render the preview of the model
         }
-        // TODO: modify this when rendering the model
+        // TODO: model manipulation view
         .sheet(isPresented: $showModel) {
             if let modelURL = placeholder.modelURL {
                 Text("Model \(modelURL)")
