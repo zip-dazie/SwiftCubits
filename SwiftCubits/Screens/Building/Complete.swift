@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Complete: View {
     var body: some View {
-        Text("Congratulations").navigationBarBackButtonHidden(true)
-
+        Text("Congratulations!").navigationBarBackButtonHidden(true)
+        LayerView()
 
     }
 }

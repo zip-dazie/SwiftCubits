@@ -6,31 +6,55 @@
 //
 
 import SwiftUI
-
 struct Layer_2: View {
+    let placeholders = [
+        //TODO: insert 3D model URLS
+        ModelPlaceholder(label: "6x", modelURL: nil),
+        ModelPlaceholder(label: "2x", modelURL: nil),
+        ModelPlaceholder(label: "6x", modelURL: nil),
+        ModelPlaceholder(label: "4x", modelURL: nil),
+        ModelPlaceholder(label: "4x", modelURL: nil),
+    ]
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
                     HStack {
-                        NavButton(destination: Layer_1(), icon: "leftArrow")
                         Spacer()
+                        NavButton(destination: Layer_1(), icon: "leftArrow")
+                            .frame(width: 30, height: 30)
                         Text("Layer 2")
                             .font(.system(size: 27, weight: .bold))
-                        Spacer()
+                            .frame(maxWidth: .infinity, alignment: .center)
+
                         NavButton(destination: Layer_3(), icon: "rightArrow")
+                            .frame(width: 30, height: 30)
+                        Spacer()
                     }
-                    .padding(.horizontal)
-                    
-                    Text("Layer 2 Content")
-                        .padding()
+                    .padding()
+                    //TODO: insert the 3D model layer here
+                    LayerView()
+
+                    //TODO: see the UnitViewer file to modify the render view and remove gray color
+                    UnitView(modelPlaceholders: placeholders)
+
                 }
+                HStack {
+                    NavButton(destination: Layer_1(), icon: "leftArrow", linkText: "Back", orientation: .backward)
+                    Spacer()
+                    NavButton(destination: Layer_3(), icon: "rightArrow", linkText: "Next")
+                }
+                .padding(.horizontal)
+
             }
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
         }
     }
 }
+
+
+
 #Preview {
     Layer_2()
 }

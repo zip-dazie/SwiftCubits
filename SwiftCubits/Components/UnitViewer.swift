@@ -57,7 +57,7 @@ struct ModelPlaceholderView: View {
             if let modelURL = placeholder.modelURL {
                 Text("Model \(modelURL)")
             } else {
-                Text("No Model")
+                Text("Update in UnitViewer.swift")
             }
         }
     }
