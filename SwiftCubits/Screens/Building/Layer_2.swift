@@ -93,24 +93,173 @@ struct Layer_2: View {
                                 .padding([.leading,.top], 30)
                             Spacer()
                         }
-                        
                         // Content of the card
                         Button(action: {
                             sheetArray[0].toggle()
                         }){
-                            Image("Layer1-1")
+                            Image("Layer2-1")
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[0]){
                             Layer1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
-                        
-                        
                         // Border at the bottom
                         Rectangle()
                             .frame(width: 310, height: 1)
                             .foregroundColor(.borderGray)
+                        
+                        
+                        HStack{
+                            Text("2.")
+                                .padding([.leading,.top], 30)
+                            Spacer()
+                        }
+                        // Content of the card
+                        Button(action: {
+                            sheetArray[0].toggle()
+                        }){
+                            Image("Layer2-2")
+                                .padding()
+                        }
+                        .sheet(isPresented: $sheetArray[0]){
+                            Layer1Sheet()
+                                .presentationDetents([.medium, .medium])
+                        }
+                        // Border at the bottom
+                        Rectangle()
+                            .frame(width: 310, height: 1)
+                            .foregroundColor(.borderGray)
+                        
+                        HStack{
+                            Text("3.")
+                                .padding([.leading,.top], 30)
+                            Spacer()
+                        }
+                        // Content of the card
+                        Button(action: {
+                            sheetArray[0].toggle()
+                        }){
+                            Image("Layer2-3")
+                                .padding()
+                        }
+                        .sheet(isPresented: $sheetArray[0]){
+                            Layer1Sheet()
+                                .presentationDetents([.medium, .medium])
+                        }
+                        // Border at the bottom
+                        Rectangle()
+                            .frame(width: 310, height: 1)
+                            .foregroundColor(.borderGray)
+                        
+                        
+                        HStack{
+                            Text("4.")
+                                .padding([.leading,.top], 30)
+                            Spacer()
+                        }
+                        // Content of the card
+                        Button(action: {
+                            sheetArray[0].toggle()
+                        }){
+                            Image("Layer2-4")
+                                .padding()
+                        }
+                        .sheet(isPresented: $sheetArray[0]){
+                            Layer1Sheet()
+                                .presentationDetents([.medium, .medium])
+                        }
+                        // Border at the bottom
+                        Rectangle()
+                            .frame(width: 310, height: 1)
+                            .foregroundColor(.borderGray)
+                        
+                        HStack{
+                            Text("5.")
+                                .padding([.leading,.top], 30)
+                            Spacer()
+                        }
+                        // Content of the card
+                        Button(action: {
+                            sheetArray[0].toggle()
+                        }){
+                            Image("Layer2-5")
+                                .padding()
+                        }
+                        .sheet(isPresented: $sheetArray[0]){
+                            Layer1Sheet()
+                                .presentationDetents([.medium, .medium])
+                        }
+                        // Border at the bottom
+                        Rectangle()
+                            .frame(width: 310, height: 1)
+                            .foregroundColor(.borderGray)
+                        
+                        HStack{
+                            Text("6.")
+                                .padding([.leading,.top], 30)
+                            Spacer()
+                        }
+                        // Content of the card
+                        Button(action: {
+                            sheetArray[0].toggle()
+                        }){
+                            Image("Layer2-6")
+                                .padding()
+                        }
+                        .sheet(isPresented: $sheetArray[0]){
+                            Layer1Sheet()
+                                .presentationDetents([.medium, .medium])
+                        }
+                        // Border at the bottom
+                        Rectangle()
+                            .frame(width: 310, height: 1)
+                            .foregroundColor(.borderGray)
+                        
+                        HStack{
+                            Text("7.")
+                                .padding([.leading,.top], 30)
+                            Spacer()
+                        }
+                        // Content of the card
+                        Button(action: {
+                            sheetArray[0].toggle()
+                        }){
+                            Image("Layer2-7")
+                                .padding()
+                        }
+                        .sheet(isPresented: $sheetArray[0]){
+                            Layer1Sheet()
+                                .presentationDetents([.medium, .medium])
+                        }
+                        // Border at the bottom
+                        Rectangle()
+                            .frame(width: 310, height: 1)
+                            .foregroundColor(.borderGray)
+                        
+                        HStack{
+                            Text("8.")
+                                .padding([.leading,.top], 30)
+                            Spacer()
+                        }
+                        // Content of the card
+                        Button(action: {
+                            sheetArray[0].toggle()
+                        }){
+                            Image("Layer2-8")
+                                .padding()
+                        }
+                        .sheet(isPresented: $sheetArray[0]){
+                            Layer1Sheet()
+                                .presentationDetents([.medium, .medium])
+                        }
+                        // Border at the bottom
+                        Rectangle()
+                            .frame(width: 310, height: 1)
+                            .foregroundColor(.borderGray)
+                        
+                        
+                    //end of VStack
                     }
                 }
                 .navigationBarBackButtonHidden(true)
