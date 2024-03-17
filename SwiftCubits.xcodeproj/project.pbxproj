@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		3411E59B2BA6865F00BD971B /* Layer1Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E59A2BA6865F00BD971B /* Layer1Sheet.swift */; };
 		3411E59F2BA68B9700BD971B /* Pg1-Layer6.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3411E59E2BA68B9600BD971B /* Pg1-Layer6.scn */; };
+		3411E5A42BA6CA6A00BD971B /* Layer1_2Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E5A32BA6CA6A00BD971B /* Layer1_2Sheet.swift */; };
+		3411E5A62BA6CAB200BD971B /* Pg1-Layer2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3411E5A52BA6CAB200BD971B /* Pg1-Layer2.scn */; };
+		3411E5A82BA6CEB600BD971B /* Layer1_3Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E5A72BA6CEB600BD971B /* Layer1_3Sheet.swift */; };
+		3411E5AB2BA6CEE800BD971B /* Pg1-Layer3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3411E5AA2BA6CEE800BD971B /* Pg1-Layer3.scn */; };
+		3411E5AD2BA6CEF800BD971B /* Pg1-Layer4.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3411E5AC2BA6CEF800BD971B /* Pg1-Layer4.scn */; };
+		3411E5AF2BA6CF0B00BD971B /* Pg1-Layer5.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3411E5AE2BA6CF0B00BD971B /* Pg1-Layer5.scn */; };
+		3411E5B12BA6CF8200BD971B /* Layer1_4Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E5B02BA6CF8200BD971B /* Layer1_4Sheet.swift */; };
+		3411E5B32BA6CF9F00BD971B /* Layer1_5Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E5B22BA6CF9F00BD971B /* Layer1_5Sheet.swift */; };
+		3411E5B52BA6CFB700BD971B /* Layer1_6Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E5B42BA6CFB700BD971B /* Layer1_6Sheet.swift */; };
 		344FA4A52B96EE8C0025D4DB /* Cubits in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A42B96EE8C0025D4DB /* Cubits */; };
 		344FA4A92B96FB880025D4DB /* CubitsCatalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */; };
 		344FA4AB2B970F850025D4DB /* CTest.scn in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4AA2B970F850025D4DB /* CTest.scn */; };
@@ -81,6 +90,15 @@
 		3411E59A2BA6865F00BD971B /* Layer1Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer1Sheet.swift; sourceTree = "<group>"; };
 		3411E59C2BA68AF500BD971B /* Layers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Layers; path = SwiftCubits/Layers; sourceTree = "<group>"; };
 		3411E59E2BA68B9600BD971B /* Pg1-Layer6.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Pg1-Layer6.scn"; path = "SwiftCubits/Layers/Layer1/Pg1-Layer6.scn"; sourceTree = "<group>"; };
+		3411E5A32BA6CA6A00BD971B /* Layer1_2Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer1_2Sheet.swift; sourceTree = "<group>"; };
+		3411E5A52BA6CAB200BD971B /* Pg1-Layer2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Pg1-Layer2.scn"; path = "SwiftCubits/Layers/Layer1/Pg1-Layer2.scn"; sourceTree = "<group>"; };
+		3411E5A72BA6CEB600BD971B /* Layer1_3Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer1_3Sheet.swift; sourceTree = "<group>"; };
+		3411E5AA2BA6CEE800BD971B /* Pg1-Layer3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Pg1-Layer3.scn"; path = "SwiftCubits/Layers/Layer1/Pg1-Layer3.scn"; sourceTree = "<group>"; };
+		3411E5AC2BA6CEF800BD971B /* Pg1-Layer4.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Pg1-Layer4.scn"; path = "SwiftCubits/Layers/Layer1/Pg1-Layer4.scn"; sourceTree = "<group>"; };
+		3411E5AE2BA6CF0B00BD971B /* Pg1-Layer5.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Pg1-Layer5.scn"; path = "SwiftCubits/Layers/Layer1/Pg1-Layer5.scn"; sourceTree = "<group>"; };
+		3411E5B02BA6CF8200BD971B /* Layer1_4Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer1_4Sheet.swift; sourceTree = "<group>"; };
+		3411E5B22BA6CF9F00BD971B /* Layer1_5Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer1_5Sheet.swift; sourceTree = "<group>"; };
+		3411E5B42BA6CFB700BD971B /* Layer1_6Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer1_6Sheet.swift; sourceTree = "<group>"; };
 		344FA4A42B96EE8C0025D4DB /* Cubits */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cubits; path = SwiftCubits/Cubits; sourceTree = SOURCE_ROOT; };
 		344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = CubitsCatalog.scnassets; sourceTree = "<group>"; };
 		344FA4AA2B970F850025D4DB /* CTest.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = CTest.scn; path = SwiftCubits/Cubits/CTest.scn; sourceTree = "<group>"; };
@@ -166,8 +184,21 @@
 			isa = PBXGroup;
 			children = (
 				3411E59A2BA6865F00BD971B /* Layer1Sheet.swift */,
+				3411E5A32BA6CA6A00BD971B /* Layer1_2Sheet.swift */,
+				3411E5A72BA6CEB600BD971B /* Layer1_3Sheet.swift */,
+				3411E5B02BA6CF8200BD971B /* Layer1_4Sheet.swift */,
+				3411E5B22BA6CF9F00BD971B /* Layer1_5Sheet.swift */,
+				3411E5B42BA6CFB700BD971B /* Layer1_6Sheet.swift */,
 			);
 			path = Layer1View;
+			sourceTree = "<group>";
+		};
+		3411E5A22BA6CA2700BD971B /* LayerModel */ = {
+			isa = PBXGroup;
+			children = (
+				3411E5992BA6862200BD971B /* Layer1View */,
+			);
+			path = LayerModel;
 			sourceTree = "<group>";
 		};
 		345A1F232BA5B691008F01D5 /* Recovered References */ = {
@@ -218,7 +249,7 @@
 		34D93A052B99A225003DB825 /* CubitView */ = {
 			isa = PBXGroup;
 			children = (
-				3411E5992BA6862200BD971B /* Layer1View */,
+				3411E5A22BA6CA2700BD971B /* LayerModel */,
 				34D48EB02B9D7CD100908C49 /* IndividualCubit_T */,
 				346C21F22B8DD587003CC59D /* SingleCubitView.swift */,
 				346C21F42B8DD588003CC59D /* SheetView.swift */,
@@ -278,6 +309,10 @@
 		B5F8E45E2B46036A008CB69C = {
 			isa = PBXGroup;
 			children = (
+				3411E5AE2BA6CF0B00BD971B /* Pg1-Layer5.scn */,
+				3411E5AC2BA6CEF800BD971B /* Pg1-Layer4.scn */,
+				3411E5AA2BA6CEE800BD971B /* Pg1-Layer3.scn */,
+				3411E5A52BA6CAB200BD971B /* Pg1-Layer2.scn */,
 				3411E59E2BA68B9600BD971B /* Pg1-Layer6.scn */,
 				3411E59C2BA68AF500BD971B /* Layers */,
 				34D48EAA2B9D6F1F00908C49 /* Cubit_7-1.scn */,
@@ -462,6 +497,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3411E5AF2BA6CF0B00BD971B /* Pg1-Layer5.scn in Resources */,
+				3411E5AD2BA6CEF800BD971B /* Pg1-Layer4.scn in Resources */,
+				3411E5AB2BA6CEE800BD971B /* Pg1-Layer3.scn in Resources */,
+				3411E5A62BA6CAB200BD971B /* Pg1-Layer2.scn in Resources */,
 				3411E59F2BA68B9700BD971B /* Pg1-Layer6.scn in Resources */,
 				34D48EAB2B9D6F1F00908C49 /* Cubit_7-1.scn in Resources */,
 				34D48EA92B9D6E6E00908C49 /* Cubit_6-2.scn in Resources */,
@@ -502,12 +541,14 @@
 				B5F0EF592B460A32002F9F8B /* Profile.swift in Sources */,
 				346C21F82B8DD588003CC59D /* SheetView.swift in Sources */,
 				346C21F72B8DD588003CC59D /* PreInstructions.swift in Sources */,
+				3411E5B12BA6CF8200BD971B /* Layer1_4Sheet.swift in Sources */,
 				34D48EAF2B9D6F7200908C49 /* Cubit_6_2_View.swift in Sources */,
 				346C21F62B8DD588003CC59D /* SingleCubitView.swift in Sources */,
 				346D24BD2B62846A00B06FBE /* UserManager.swift in Sources */,
 				346D24D62B663EB900B06FBE /* AuthDataResultModel.swift in Sources */,
 				3411E59B2BA6865F00BD971B /* Layer1Sheet.swift in Sources */,
 				B5993E392B48AB2300D2E79C /* Build.swift in Sources */,
+				3411E5B32BA6CF9F00BD971B /* Layer1_5Sheet.swift in Sources */,
 				B57A90432BA0196400C8A768 /* NavButton.swift in Sources */,
 				B5F0EF552B46083C002F9F8B /* Home.swift in Sources */,
 				B57A90392B9ED82100C8A768 /* Layer_2.swift in Sources */,
@@ -516,12 +557,15 @@
 				346D24C92B62925400B06FBE /* AuthView.swift in Sources */,
 				B5F0EF572B460852002F9F8B /* Instructions.swift in Sources */,
 				346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */,
+				3411E5A82BA6CEB600BD971B /* Layer1_3Sheet.swift in Sources */,
 				B57A903F2B9ED8D500C8A768 /* Complete.swift in Sources */,
 				346D24CC2B629F6A00B06FBE /* AuthManager.swift in Sources */,
+				3411E5A42BA6CA6A00BD971B /* Layer1_2Sheet.swift in Sources */,
 				34D48EAD2B9D6F4900908C49 /* Cubit_7_1_View.swift in Sources */,
 				B57A90372B9ED80F00C8A768 /* Layer_1.swift in Sources */,
 				34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */,
 				B580C1FE2B5B79F400F77808 /* Model.swift in Sources */,
+				3411E5B52BA6CFB700BD971B /* Layer1_6Sheet.swift in Sources */,
 				B591B7FC2B69C9A400482649 /* Guide.swift in Sources */,
 				B57A903B2B9ED82E00C8A768 /* Layer_3.swift in Sources */,
 				B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */,

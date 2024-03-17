@@ -58,7 +58,8 @@ struct Layer_1: View {
                                 .scaledToFit()
                                 .frame(width:65, height: 50)
                                 .padding([.top,.bottom],20)
-                                .border(.black)
+                                .padding([.leading], 20)
+//                                .border(.black)
                             Image("sCubit7-1")
                                 .resizable()
                                 .scaledToFit()
@@ -69,8 +70,12 @@ struct Layer_1: View {
                                 .scaledToFit()
                                 .frame(width:50, height: 50)
                                 .padding()
+                            Spacer()
                         }
                         .frame(width:340, height: 100)
+                        .alignmentGuide(.leading){ _ in
+                            return -100
+                        }
                         .background(Color("GridColor").opacity(0.28))
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                         
@@ -100,8 +105,8 @@ struct Layer_1: View {
                             }
                             .sheet(isPresented: $sheetArray[0]){
                                 Cubit_5_4_View(objectName: "Cubit_5-4")
+                                    .presentationDetents([.medium, .medium])
                             }
-                            .presentationDetents([.medium, .medium])
                             
                             
                             // Border at the bottom
@@ -118,16 +123,15 @@ struct Layer_1: View {
                         
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[1].toggle()
                         }){
-                            Image("Layer1-1")
+                            Image("Layer1-2")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Cubit_5_4_View(objectName: "Cubit_5-4")
+                        .sheet(isPresented: $sheetArray[1]){
+                            Layer1_2Sheet()
+                                .presentationDetents([.medium, .medium])
                         }
-                        .presentationDetents([.medium, .medium])
-                        
                         
                         // Border at the bottom
                         Rectangle()
@@ -142,16 +146,16 @@ struct Layer_1: View {
                         
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[2].toggle()
                         }){
-                            Image("Layer1-1")
+                            Image("Layer1-3")
                                 .padding()
+                                .offset(x:7)
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Cubit_5_4_View(objectName: "Cubit_5-4")
+                        .sheet(isPresented: $sheetArray[2]){
+                            Layer1_3Sheet()
+                                .presentationDetents([.medium, .medium])
                         }
-                        .presentationDetents([.medium, .medium])
-                        
                         
                         // Border at the bottom
                         Rectangle()
@@ -166,13 +170,13 @@ struct Layer_1: View {
                         
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[3].toggle()
                         }){
-                            Image("Layer1-1")
+                            Image("Layer1-4")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Cubit_5_4_View(objectName: "Cubit_5-4")
+                        .sheet(isPresented: $sheetArray[3]){
+                            Layer1_4Sheet()
                         }
                         .presentationDetents([.medium, .medium])
                         
@@ -189,13 +193,14 @@ struct Layer_1: View {
                         
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[4].toggle()
                         }){
-                            Image("Layer1-1")
+                            Image("Layer1-5")
+                                .offset(x:-8)
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Cubit_5_4_View(objectName: "Cubit_5-4")
+                        .sheet(isPresented: $sheetArray[4]){
+                            Layer1_5Sheet()
                         }
                         .presentationDetents([.medium, .medium])
                         
@@ -213,13 +218,13 @@ struct Layer_1: View {
                     
                     // Content of the card
                     Button(action: {
-                        sheetArray[0].toggle()
+                        sheetArray[5].toggle()
                     }){
-                        Image("Layer1-1")
+                        Image("Layer1-6")
                             .padding()
                     }
-                    .sheet(isPresented: $sheetArray[0]){
-                        Cubit_5_4_View(objectName: "Cubit_5-4")
+                    .sheet(isPresented: $sheetArray[5]){
+                        Layer1_6Sheet()
                     }
                     .presentationDetents([.medium, .medium])
                     
