@@ -41,7 +41,7 @@
 		B57A90392B9ED82100C8A768 /* Layer_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90382B9ED82100C8A768 /* Layer_2.swift */; };
 		B57A903B2B9ED82E00C8A768 /* Layer_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903A2B9ED82E00C8A768 /* Layer_3.swift */; };
 		B57A903D2B9ED86B00C8A768 /* Layer_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903C2B9ED86B00C8A768 /* Layer_4.swift */; };
-		B57A903F2B9ED8D500C8A768 /* Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903E2B9ED8D500C8A768 /* Complete.swift */; };
+		B57A903F2B9ED8D500C8A768 /* PostInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A903E2B9ED8D500C8A768 /* PostInstructions.swift */; };
 		B57A90432BA0196400C8A768 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90422BA0196400C8A768 /* NavButton.swift */; };
 		B57A90482BA0243600C8A768 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = B57A90472BA0243600C8A768 /* Assets */; };
 		B57A904C2BA6952000C8A768 /* UnitViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A904B2BA6952000C8A768 /* UnitViewer.swift */; };
@@ -108,7 +108,7 @@
 		B57A90382B9ED82100C8A768 /* Layer_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_2.swift; sourceTree = "<group>"; };
 		B57A903A2B9ED82E00C8A768 /* Layer_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_3.swift; sourceTree = "<group>"; };
 		B57A903C2B9ED86B00C8A768 /* Layer_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_4.swift; sourceTree = "<group>"; };
-		B57A903E2B9ED8D500C8A768 /* Complete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complete.swift; sourceTree = "<group>"; };
+		B57A903E2B9ED8D500C8A768 /* PostInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInstructions.swift; sourceTree = "<group>"; };
 		B57A90422BA0196400C8A768 /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
 		B57A90472BA0243600C8A768 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		B57A904B2BA6952000C8A768 /* UnitViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewer.swift; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 				B57A90382B9ED82100C8A768 /* Layer_2.swift */,
 				B57A903A2B9ED82E00C8A768 /* Layer_3.swift */,
 				B57A903C2B9ED86B00C8A768 /* Layer_4.swift */,
-				B57A903E2B9ED8D500C8A768 /* Complete.swift */,
+				B57A903E2B9ED8D500C8A768 /* PostInstructions.swift */,
 			);
 			path = Building;
 			sourceTree = "<group>";
@@ -490,7 +490,7 @@
 				B57A903D2B9ED86B00C8A768 /* Layer_4.swift in Sources */,
 				346D24C92B62925400B06FBE /* AuthView.swift in Sources */,
 				346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */,
-				B57A903F2B9ED8D500C8A768 /* Complete.swift in Sources */,
+				B57A903F2B9ED8D500C8A768 /* PostInstructions.swift in Sources */,
 				346D24CC2B629F6A00B06FBE /* AuthManager.swift in Sources */,
 				34D48EAD2B9D6F4900908C49 /* Cubit_7_1_View.swift in Sources */,
 				B57A90372B9ED80F00C8A768 /* Layer_1.swift in Sources */,
