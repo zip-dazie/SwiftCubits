@@ -118,10 +118,10 @@ struct Layer1_2Sheet: View {
         let newAngle = Float((offset * .pi) / 180)
         
         if(isVerticalLook){
-            scene?.rootNode.childNode(withName: "Root", recursively: true)?.eulerAngles.x = (newAngle)
+            scene?.rootNode.childNode(withName: "Layer", recursively: true)?.eulerAngles.x = (newAngle)
         }
         else{
-            scene?.rootNode.childNode(withName: "Root", recursively: true)?.eulerAngles.y = (newAngle)
+            scene?.rootNode.childNode(withName: "Layer", recursively: true)?.eulerAngles.y = (newAngle)
         }
         
         if (animate){

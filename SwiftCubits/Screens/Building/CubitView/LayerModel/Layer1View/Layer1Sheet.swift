@@ -11,7 +11,7 @@ import SceneKit
 
 struct Layer1Sheet: View {
     //TODO: Programmatically pass in the names of the correct cubit piece here
-    @State var scene:SCNScene? = .init(named: "Pg1-Layer6.scn")
+    @State var scene:SCNScene? = .init(named: "Pg1-Layer1.scn")
     
     //view properties
     @State var isVerticalLook: Bool = false
@@ -149,5 +149,5 @@ struct Layer1Sheet: View {
 }
 
 #Preview(){
-    SheetView(objectName: ("Pg1-Layer6.scn") )
+    SheetView(objectName: ("Pg1-Layer1.scn") )
 }

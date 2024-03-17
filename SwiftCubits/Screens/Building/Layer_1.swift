@@ -104,7 +104,7 @@ struct Layer_1: View {
                                     .padding()
                             }
                             .sheet(isPresented: $sheetArray[0]){
-                                Cubit_5_4_View(objectName: "Cubit_5-4")
+                                Layer1Sheet()
                                     .presentationDetents([.medium, .medium])
                             }
                             
