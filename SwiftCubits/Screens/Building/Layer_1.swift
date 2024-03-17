@@ -36,7 +36,7 @@ struct Layer_1: View {
                         }
                     }
                     .sheet(isPresented:$isLayerPresented){
-                        Layer1Sheet()
+                        Layer1_6Sheet()
                     }
                     .padding()
                     
@@ -177,8 +177,9 @@ struct Layer_1: View {
                         }
                         .sheet(isPresented: $sheetArray[3]){
                             Layer1_4Sheet()
+                                .presentationDetents([.medium, .medium])
                         }
-                        .presentationDetents([.medium, .medium])
+                        
                         
                         // Border at the bottom
                         Rectangle()
@@ -201,8 +202,9 @@ struct Layer_1: View {
                         }
                         .sheet(isPresented: $sheetArray[4]){
                             Layer1_5Sheet()
+                                .presentationDetents([.medium, .medium])
                         }
-                        .presentationDetents([.medium, .medium])
+                        
                         
                         // Border at the bottom
                         Rectangle()
@@ -225,8 +227,9 @@ struct Layer_1: View {
                     }
                     .sheet(isPresented: $sheetArray[5]){
                         Layer1_6Sheet()
+                            .presentationDetents([.medium, .medium])
                     }
-                    .presentationDetents([.medium, .medium])
+                    
                     
                     // Border at the bottom
                     Rectangle()

@@ -198,9 +198,17 @@
 		3411E5A22BA6CA2700BD971B /* LayerModel */ = {
 			isa = PBXGroup;
 			children = (
+				3411E5B82BA6E87B00BD971B /* Layer2View */,
 				3411E5992BA6862200BD971B /* Layer1View */,
 			);
 			path = LayerModel;
+			sourceTree = "<group>";
+		};
+		3411E5B82BA6E87B00BD971B /* Layer2View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Layer2View;
 			sourceTree = "<group>";
 		};
 		345A1F232BA5B691008F01D5 /* Recovered References */ = {

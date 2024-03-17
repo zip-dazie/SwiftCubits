@@ -116,12 +116,14 @@ struct Layer1_3Sheet: View {
             SCNTransaction.animationDuration = 0.4
         }
         
-        let newAngle = Float((offset * .pi) / 180)
-        
         if(isVerticalLook){
+            let newAngle = Float((offset * .pi) / 45 )
+            print(newAngle)
             scene?.rootNode.childNode(withName: "Layer", recursively: true)?.eulerAngles.x = (newAngle)
         }
         else{
+            let newAngle = Float((offset * .pi) / 180)
+            print(newAngle)
             scene?.rootNode.childNode(withName: "Layer", recursively: true)?.eulerAngles.y = (newAngle)
         }
         
