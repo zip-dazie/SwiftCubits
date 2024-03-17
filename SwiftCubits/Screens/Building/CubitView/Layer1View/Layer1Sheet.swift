@@ -92,16 +92,8 @@ struct Layer1Sheet: View {
                             .fill(.white)
                     }
                     .offset(y: -12)
-                    .offset(x: offset + initialOffset)
+                    .offset(x: offset )
                     .gesture(
-//                        DragGesture()
-//                                .updating($offset) { value, offset, _ in
-//                                    offset = value.translation.width // Accumulate translation
-//                                }
-//                                .onEnded { value in
-//                                    // Update initialOffset after gesture ends
-//                                    initialOffset += value.translation.width
-//                                }
                         DragGesture()
                             .updating($offset, body: { value, out, _ in
                                 out = value.location.x-20

@@ -50,10 +50,12 @@ struct Layer_1: View {
                         }
                         
                         //Cubits pieces
-                        Color("GridColor").opacity(0.28)
-                            .frame(width: 340, height: 100)
-                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                        HStack{
                             
+                        }
+                        .frame(width:340, height: 100)
+                        .background(Color("GridColor").opacity(0.28))
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
                         
                         HStack{
                             Text("Instructions")
@@ -63,6 +65,24 @@ struct Layer_1: View {
                             Spacer()
                         }
                         .padding([.top], 10)
+                        
+                        VStack{
+                            HStack{
+                                Text("1")
+                                    .padding([.leading,.top], 30)
+                                Spacer()
+                            }
+                            
+                            // Content of the card
+                            Image("Layer1-1")
+                                .padding()
+                            
+                            // Border at the bottom
+                            Rectangle()
+                                .frame(width: 310, height: 1)
+                                .foregroundColor(.borderGray)
+                        }
+                        
                         
                     }
                     .padding([.top], 30)
@@ -76,6 +96,20 @@ struct Layer_1: View {
     }
 }
 
+struct BottomBorderCard: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            // Content of the card
+            Image("Layer1-1")
+                .padding()
+            
+            // Border at the bottom
+            Rectangle()
+                .frame(width: 310, height: 1)
+                .foregroundColor(.borderGray)
+        }
+    }
+}
 
 
 #Preview {
