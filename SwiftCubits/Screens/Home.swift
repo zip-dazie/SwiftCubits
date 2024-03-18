@@ -222,7 +222,7 @@ struct Home: View {
                         }
                     )
                 }
-                .padding(.vertical, 10.0)
+                .padding(.vertical, 5.0)
                 
                 //Mountain
                 Button(action: {
@@ -274,7 +274,7 @@ struct Home: View {
                     )
                 }
                 
-                .padding(.vertical, 10.0)
+                .padding(.vertical, 5.0)
                 
                 //Human Figure
                 Button(action: {
@@ -326,7 +326,7 @@ struct Home: View {
                     )
                 }
                 
-                .padding(.vertical, 10.0)
+                .padding(.vertical, 5.0)
                 
                 
             }
