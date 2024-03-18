@@ -50,7 +50,7 @@ struct PreInstructions: View{
                 NavButton(destination:Layer_1(), icon: "rightArrow", linkText: "Next")
 
                 .padding(.leading, 20)
-            }
+            }.padding(.bottom, 55)
             
            
         }

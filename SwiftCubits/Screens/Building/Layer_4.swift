@@ -57,6 +57,7 @@ struct Layer_4: View {
                 .padding(.horizontal)
 
             }
+            .padding(.bottom, 55)
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
         }

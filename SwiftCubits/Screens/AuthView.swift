@@ -19,7 +19,7 @@ struct AuthView: View {
                 HStack {
                     
                     
-                    Text("Login")
+                    Text("Login").navigationBarBackButtonHidden(true)
                         .font(.system(size:25, weight: .heavy))
                         .foregroundColor(Color("customPurple"))
                     
@@ -101,9 +101,7 @@ struct AuthView: View {
                     Text("Don't have an Account?")
                         .font(.system(size: 14))
                         .opacity(0.6)
-                    Button(action: {
-                        print("signin clicked")
-                    }){
+                    NavigationLink(destination: SignIn(showSignInView: .constant(false))){
                         Text("Sign Up")
                             .font(.system(size: 14))
                             .bold()
