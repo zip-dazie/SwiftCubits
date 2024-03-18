@@ -38,43 +38,9 @@ struct Layer_3: View {
                         Layer3Sheet()
                     }
                     .padding()
-                    
-                    VStack(){
-                        HStack{
-                            Text("Units")
-                                .bold()
-                                .font(.system(size:20))
-                                .padding([.leading], 20)
-                            
-                            Spacer()
-                        }
-                        .padding([.top], 30)
-                    }
-                    
+                
                     //Cubits pieces
-                    HStack{
-                        Image("sCubit6-2")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width:65, height: 50)
-                            .padding([.top,.bottom],20)
-                            .padding([.leading], 20)
-//                                .border(.black)
-                        Image("sCubit7-1")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width:45, height: 45)
-                            .padding()
-                        Image("sCubit5-4")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width:50, height: 50)
-                            .padding()
-                        Spacer()
-                    }
-                    .frame(width:340, height: 150)
-                    .background(Color("GridColor").opacity(0.28))
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                    UnitViewer_3()
                  
                     //Instructions
                     HStack{

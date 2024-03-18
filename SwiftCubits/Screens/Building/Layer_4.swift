@@ -71,7 +71,7 @@ struct Layer_4: View {
                             .padding()
                         Spacer()
                     }
-                    .frame(width:340, height: 150)
+                    .frame(width:340, height: 100)
                     .background(Color("GridColor").opacity(0.28))
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     
