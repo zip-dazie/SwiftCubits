@@ -121,8 +121,6 @@ struct Profile: View {
                 
             }
             .padding([.top,.bottom], 5)
-            
-            //TODO: ADD UI ELEMENTS
             Button("Log out"){
                 Task{
                     do{
@@ -134,7 +132,16 @@ struct Profile: View {
                     }
                 }
             }
-            .padding(.bottom, 55)
+            .frame(width:342, height: 65 )
+            .foregroundColor(Color.black)
+            .bold()
+            .background(
+                RoundedRectangle(
+                    cornerRadius: 10,
+                    style:.continuous
+                )
+                .fill(Color("CustomGray"))
+            )
             
             
         } .padding(.bottom, 55)
