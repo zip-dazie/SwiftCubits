@@ -26,7 +26,7 @@ struct Home: View {
                             .font(.system(size:24))
                     }
                     Spacer()
-                    Image("catFiller")
+                    Image("peterIcon")
                         .resizable()
                         .frame(width: 54, height: 54)
                         .clipShape(Circle())

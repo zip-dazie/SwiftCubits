@@ -15,36 +15,39 @@ struct Profile: View {
     var body: some View {
         ScrollView{
             LazyVStack {
-                Image("catFiller")
+                Image("peterIcon")
                     .resizable()
                     .frame(width: 72, height: 72)
                     .clipShape(Circle())
                 
-                Text("Peter Anteater")
+                Text("Peter Johnson")
                     .bold()
                     .font(.system(size:20))
                     .padding()
                 
                 HStack {
                     Text("My Favorites")
-                        .fontWeight(.heavy)              
+                        .fontWeight(.heavy)
                         .font(.system(size: 23))
                         .padding([.leading], 20)
                     Spacer()
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack(spacing: 0) {
-                        ForEach(0..<6, id: \.self) { index in
-                            GeometryReader { geometry in
-                                Image("catFiller")
-                                    .resizable()
-                                    .frame(width: 198, height: 270)
-                                    .cornerRadius(10)
-                                    .scaleEffect(scaleValue(geometry: geometry), anchor: .center)
-                            }
-                            .frame(width: 198, height: 290)
-                            
-                        }
+                    LazyHStack(spacing: 20) {
+                        Image("skullHome")
+                            .resizable()
+                            .frame(width: 198, height: 270)
+                            .cornerRadius(10)
+                        
+                        Image("asteroidHome")
+                            .resizable()
+                            .frame(width: 198, height: 270)
+                            .cornerRadius(10)
+                        
+                        Image("personHome")
+                            .resizable()
+                            .frame(width: 198, height: 270)
+                            .cornerRadius(10)
                     }
                 }
             }
@@ -52,7 +55,7 @@ struct Profile: View {
             
             HStack {
                 Text("Personalization")
-                    .fontWeight(.heavy)              
+                    .fontWeight(.heavy)
                     .font(.system(size: 23))
                     .padding([.leading], 20)
                 
@@ -118,20 +121,26 @@ struct Profile: View {
                 
             }
             .padding([.top,.bottom], 5)
-            
-            //TODO: ADD UI ELEMENTS
-            Button("Log out"){
-                Task{
-                    do{
+            Button(action: {
+                Task {
+                    do {
                         try viewModel.signOut()
                         showSignInView = true
-                    } catch{
+                    } catch {
                         //TODO: FIX THIS ERROR HANDLING
                         print(error)
                     }
                 }
+            }) {
+                Text("Log out")
+                    .frame(width: 342, height: 65)
+                    .foregroundColor(Color.black)
+                    .bold()
+                    .background(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color("CustomGray"))
+                    )
             }
-            .padding(.bottom, 55)
             
             
         } .padding(.bottom, 55)
@@ -148,4 +157,3 @@ private func scaleValue(geometry: GeometryProxy) -> CGFloat {
 #Preview {
     Profile(showSignInView: .constant(false))
 }
-

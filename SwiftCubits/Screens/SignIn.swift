@@ -1,14 +1,7 @@
-//
-//  AuthView.swift
-//  SwiftCubits
-//
-//  Created by Arthur Chan on 1/25/24.
-//
-
 import Foundation
 import SwiftUI
 
-struct AuthView: View {
+struct SignIn: View {
     
     @StateObject private var viewModel = SignInEmailViewModel()
     @Binding var showSignInView: Bool
@@ -17,12 +10,15 @@ struct AuthView: View {
         NavigationStack{
             VStack{
                 HStack {
-                    
-                    
-                    Text("Login").navigationBarBackButtonHidden(true)
-                        .font(.system(size:25, weight: .heavy))
-                        .foregroundColor(Color("customPurple"))
-                    
+                    VStack(alignment: .leading) {
+                        Text("Welcome to").navigationBarBackButtonHidden(true)
+                            .font(.system(size:25))
+                            .padding(.bottom, 5)
+                        
+                        Text("Marching Cubes!")
+                            .font(.system(size:25, weight: .heavy))
+                            .foregroundColor(Color("customPurple"))
+                    }
                     Spacer()
                     
                     Image("Shape257")
@@ -33,6 +29,12 @@ struct AuthView: View {
                 .padding([.vertical])
                 
                 VStack (spacing: 24){
+                    
+                    TextField("Name", text: $viewModel.email)
+                        .padding()
+                        .foregroundColor(Color("customGrayText"))
+                        .background(Color.gray.opacity(0.3))
+                        .cornerRadius(10)
                     
                     TextField("Email", text: $viewModel.email)
                         .padding()
@@ -45,19 +47,25 @@ struct AuthView: View {
                         .foregroundColor(Color("customGrayText"))
                         .background(Color.gray.opacity(0.3))
                         .cornerRadius(10)
+                    
+                    SecureField("Confirm Password", text: $viewModel.password)
+                        .padding()
+                        .foregroundColor(Color("customGrayText"))
+                        .background(Color.gray.opacity(0.3))
+                        .cornerRadius(10)
                 }
                 HStack{
-                    Spacer()
-                    Button(action: {
-                        print("forgot clicked")
-                    }){
-                        Spacer()
-                        Text("Forgot Password?")
+                    Text("Have an Account?")
+                        .font(.system(size: 14))
+                        .opacity(0.6)
+                    NavigationLink(destination: AuthView(showSignInView:.constant(true))){
+                        Text("Login")
                             .font(.system(size: 14))
-                            .foregroundColor(Color("customGrayText"))
-                            .opacity(0.8)
-                            .padding(5)
-                        
+                            .bold()
+                            .foregroundColor(Color("customPurple"))
+                    }
+                
+                        Spacer()
                         
                     }
                 }
@@ -83,7 +91,7 @@ struct AuthView: View {
                         } //END **********************************
                     }
                 } label: {
-                    Text("Login")
+                    Text("Sign up")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 55)
@@ -91,32 +99,15 @@ struct AuthView: View {
                         .background(Color("customPurple"))
                         .cornerRadius(10)
                 }
-                
-                Text("-or-")
-                    .font(.system(size: 14))
-                    .opacity(0.6)
-                    .padding()
-                
-                HStack{
-                    Text("Don't have an Account?")
-                        .font(.system(size: 14))
-                        .opacity(0.6)
-                    NavigationLink(destination: SignIn(showSignInView: .constant(false))){
-                        Text("Sign Up")
-                            .font(.system(size: 14))
-                            .bold()
-                            .foregroundColor(Color("customPurple"))
-                    }
-                }
+            Spacer()
             }
             .padding()
             Spacer()
         }
         
     }
-}
 
 
 #Preview{
-    AuthView(showSignInView: .constant(false));
+    SignIn(showSignInView: .constant(false));
 }

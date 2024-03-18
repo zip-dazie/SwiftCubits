@@ -20,7 +20,7 @@ struct Layer_4: View {
                         Text("Layer 4")
                             .font(.system(size: 27, weight: .bold))
                         Spacer()
-                        NavButton(destination: Complete(), icon: "rightArrow")
+                        NavButton(destination: PostInstructions(), icon: "rightArrow")
                     }
                     .padding(.horizontal)
                     

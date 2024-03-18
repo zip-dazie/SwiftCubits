@@ -89,6 +89,7 @@
 		34D48EAB2B9D6F1F00908C49 /* Cubit_7-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D48EAA2B9D6F1F00908C49 /* Cubit_7-1.scn */; };
 		34D48EAD2B9D6F4900908C49 /* Cubit_7_1_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EAC2B9D6F4900908C49 /* Cubit_7_1_View.swift */; };
 		34D48EAF2B9D6F7200908C49 /* Cubit_6_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48EAE2B9D6F7200908C49 /* Cubit_6_2_View.swift */; };
+		34D6156E2BA8A7A0008F3E17 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6156D2BA8A7A0008F3E17 /* SignIn.swift */; };
 		34D93A072B99A296003DB825 /* Cubit_2_2_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */; };
 		34D93A092B99ABA5003DB825 /* Cubit_2-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */; };
 		34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */; };
@@ -213,6 +214,7 @@
 		34D48EAC2B9D6F4900908C49 /* Cubit_7_1_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_7_1_View.swift; sourceTree = "<group>"; };
 		34D48EAE2B9D6F7200908C49 /* Cubit_6_2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_6_2_View.swift; sourceTree = "<group>"; };
 		34D48EB22B9D835400908C49 /* Layers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Layers; sourceTree = "<group>"; };
+		34D6156D2BA8A7A0008F3E17 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		34D93A062B99A296003DB825 /* Cubit_2_2_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cubit_2_2_View.swift; sourceTree = "<group>"; };
 		34D93A082B99ABA5003DB825 /* Cubit_2-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-1.scn"; path = "SwiftCubits/Cubits/Cubit_2-1.scn"; sourceTree = "<group>"; };
 		34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-2.scn"; path = "SwiftCubits/Cubits/Cubit_2-2.scn"; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 				346D24C82B62925400B06FBE /* AuthView.swift */,
 				B5F0EF582B460A32002F9F8B /* Profile.swift */,
 				B5993E382B48AB2300D2E79C /* Build.swift */,
+				34D6156D2BA8A7A0008F3E17 /* SignIn.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -777,6 +780,7 @@
 				3411E5D82BA8810900BD971B /* Layer2_6Sheet.swift in Sources */,
 				3411E5F12BA888F600BD971B /* Layer3_2Sheet.swift in Sources */,
 				B5F8E46B2B46036A008CB69C /* SwiftCubitsApp.swift in Sources */,
+				34D6156E2BA8A7A0008F3E17 /* SignIn.swift in Sources */,
 				34D48EA32B9D5DB200908C49 /* Cubit_5_4_View.swift in Sources */,
 				3411E5EF2BA888D400BD971B /* Layer3_1Sheet.swift in Sources */,
 				3411E6162BA88A4500BD971B /* Layer4_4Sheet.swift in Sources */,
