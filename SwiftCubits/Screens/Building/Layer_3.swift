@@ -103,12 +103,12 @@ struct Layer_3: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[1].toggle()
                         }){
                             Image("Layer3-2")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
+                        .sheet(isPresented: $sheetArray[1]){
                             Layer1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
@@ -124,12 +124,12 @@ struct Layer_3: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[2].toggle()
                         }){
                             Image("Layer3-3")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
+                        .sheet(isPresented: $sheetArray[2]){
                             Layer1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
@@ -145,12 +145,12 @@ struct Layer_3: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[3].toggle()
                         }){
                             Image("Layer3-4")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
+                        .sheet(isPresented: $sheetArray[3]){
                             Layer1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
@@ -166,12 +166,12 @@ struct Layer_3: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[4].toggle()
                         }){
                             Image("Layer3-5")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
+                        .sheet(isPresented: $sheetArray[4]){
                             Layer1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
@@ -187,12 +187,12 @@ struct Layer_3: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[5].toggle()
                         }){
                             Image("Layer3-6")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
+                        .sheet(isPresented: $sheetArray[5]){
                             Layer1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
@@ -208,12 +208,12 @@ struct Layer_3: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[6].toggle()
                         }){
                             Image("Layer3-7")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
+                        .sheet(isPresented: $sheetArray[6]){
                             Layer1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }

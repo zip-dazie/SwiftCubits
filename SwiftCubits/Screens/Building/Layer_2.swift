@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Layer_2: View {
     @State private var isLayerPresented = false;
-    @State private var sheetArray = Array(repeating: false, count: 6)
+    @State private var sheetArray = Array(repeating: false, count: 8)
     
     var body: some View {
         NavigationStack {
@@ -35,7 +35,7 @@ struct Layer_2: View {
                         }
                     }
                     .sheet(isPresented:$isLayerPresented){
-                        Layer1_6Sheet()
+                        Layer2Sheet()
                     }
                     .padding()
                     
@@ -101,7 +101,7 @@ struct Layer_2: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                            Layer2_1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -117,13 +117,13 @@ struct Layer_2: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[1].toggle()
                         }){
                             Image("Layer2-2")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                        .sheet(isPresented: $sheetArray[1]){
+                            Layer2_2Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -138,13 +138,13 @@ struct Layer_2: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[2].toggle()
                         }){
                             Image("Layer2-3")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                        .sheet(isPresented: $sheetArray[2]){
+                            Layer2_3Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -160,13 +160,13 @@ struct Layer_2: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[3].toggle()
                         }){
                             Image("Layer2-4")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                        .sheet(isPresented: $sheetArray[3]){
+                            Layer2_4Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -181,13 +181,13 @@ struct Layer_2: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[4].toggle()
                         }){
                             Image("Layer2-5")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                        .sheet(isPresented: $sheetArray[4]){
+                            Layer2_5Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -202,13 +202,13 @@ struct Layer_2: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[5].toggle()
                         }){
                             Image("Layer2-6")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                        .sheet(isPresented: $sheetArray[5]){
+                            Layer2_6Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -223,13 +223,13 @@ struct Layer_2: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[6].toggle()
                         }){
                             Image("Layer2-7")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                        .sheet(isPresented: $sheetArray[6]){
+                            Layer2_7Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -244,13 +244,13 @@ struct Layer_2: View {
                         }
                         // Content of the card
                         Button(action: {
-                            sheetArray[0].toggle()
+                            sheetArray[7].toggle()
                         }){
                             Image("Layer2-8")
                                 .padding()
                         }
-                        .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                        .sheet(isPresented: $sheetArray[7]){
+                            Layer2_8Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
