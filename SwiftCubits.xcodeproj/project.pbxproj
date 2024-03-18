@@ -36,6 +36,10 @@
 		34D93A0B2B99AD06003DB825 /* Cubit_2-2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */; };
 		B570A8FF2B79F9860095ED37 /* GlobalStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A8FE2B79F9860095ED37 /* GlobalStates.swift */; };
 		B570A9012B7B32440095ED37 /* UploadedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570A9002B7B32440095ED37 /* UploadedFiles.swift */; };
+		82D295362BA63A130098B105 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D295352BA63A130098B105 /* SignIn.swift */; };
+		82D295382BA6458D0098B105 /* SelectFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D295372BA6458D0098B105 /* SelectFile.swift */; };
+		B56900662B612977000D2AB9 /* Cubits1.obj in Resources */ = {isa = PBXBuildFile; fileRef = B56900652B612977000D2AB9 /* Cubits1.obj */; };
+		B56900682B612A5E000D2AB9 /* Cubits2.obj in Resources */ = {isa = PBXBuildFile; fileRef = B56900672B612A5E000D2AB9 /* Cubits2.obj */; };
 		B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573C83A2B57B305006F79E1 /* CustomBar.swift */; };
 		B57A90372B9ED80F00C8A768 /* Layer_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90362B9ED80F00C8A768 /* Layer_1.swift */; };
 		B57A90392B9ED82100C8A768 /* Layer_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A90382B9ED82100C8A768 /* Layer_2.swift */; };
@@ -103,6 +107,10 @@
 		34D93A0A2B99AD05003DB825 /* Cubit_2-2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Cubit_2-2.scn"; path = "SwiftCubits/Cubits/Cubit_2-2.scn"; sourceTree = "<group>"; };
 		B570A8FE2B79F9860095ED37 /* GlobalStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStates.swift; sourceTree = "<group>"; };
 		B570A9002B7B32440095ED37 /* UploadedFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadedFiles.swift; sourceTree = "<group>"; };
+		82D295352BA63A130098B105 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		82D295372BA6458D0098B105 /* SelectFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFile.swift; sourceTree = "<group>"; };
+		B56900652B612977000D2AB9 /* Cubits1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cubits1.obj; sourceTree = "<group>"; };
+		B56900672B612A5E000D2AB9 /* Cubits2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cubits2.obj; sourceTree = "<group>"; };
 		B573C83A2B57B305006F79E1 /* CustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBar.swift; sourceTree = "<group>"; };
 		B57A90362B9ED80F00C8A768 /* Layer_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_1.swift; sourceTree = "<group>"; };
 		B57A90382B9ED82100C8A768 /* Layer_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer_2.swift; sourceTree = "<group>"; };
@@ -247,6 +255,8 @@
 				346D24C82B62925400B06FBE /* AuthView.swift */,
 				B5F0EF582B460A32002F9F8B /* Profile.swift */,
 				B5993E382B48AB2300D2E79C /* Build.swift */,
+				82D295352BA63A130098B105 /* SignIn.swift */,
+				82D295372BA6458D0098B105 /* SelectFile.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -488,9 +498,12 @@
 				B57A90392B9ED82100C8A768 /* Layer_2.swift in Sources */,
 				B573C83B2B57B305006F79E1 /* CustomBar.swift in Sources */,
 				B57A903D2B9ED86B00C8A768 /* Layer_4.swift in Sources */,
+				82D295362BA63A130098B105 /* SignIn.swift in Sources */,
 				346D24C92B62925400B06FBE /* AuthView.swift in Sources */,
 				346D24D42B663E4200B06FBE /* AuthViewModel.swift in Sources */,
 				B57A903F2B9ED8D500C8A768 /* PostInstructions.swift in Sources */,
+				B57A903F2B9ED8D500C8A768 /* Complete.swift in Sources */,
+				82D295382BA6458D0098B105 /* SelectFile.swift in Sources */,
 				346D24CC2B629F6A00B06FBE /* AuthManager.swift in Sources */,
 				34D48EAD2B9D6F4900908C49 /* Cubit_7_1_View.swift in Sources */,
 				B57A90372B9ED80F00C8A768 /* Layer_1.swift in Sources */,

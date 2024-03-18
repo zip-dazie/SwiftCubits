@@ -53,7 +53,7 @@ struct Build: View {
                     .clipShape(Circle())
                     .frame(width: 50, height: 50)
                     
-                    Text("Drag & Drop or Choose file\n Max file size: 10mb")
+                    Text("Drag & Drop or Choose file\n Max file size: 10 MB")
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -123,7 +123,7 @@ struct Build: View {
                    
                     }) {
                         HStack {
-                            Image("uploadicon")
+                            Image("demoShape")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 50, height: 65.0)
@@ -138,7 +138,7 @@ struct Build: View {
                                     Spacer()
                                 }
                                 HStack{
-                                    Text("2.3 MB")
+                                    Text("5.4 MB")
                                         .font(.system(size: 14))
                                         .foregroundColor(.gray)
                                     Text("Upload Complete")
