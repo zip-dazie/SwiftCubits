@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Layer_3: View {
     @State private var isLayerPresented = false;
-    @State private var sheetArray = Array(repeating: false, count: 6)
+    @State private var sheetArray = Array(repeating: false, count: 7)
     
     var body: some View {
         NavigationStack {
@@ -35,7 +35,7 @@ struct Layer_3: View {
                         }
                     }
                     .sheet(isPresented:$isLayerPresented){
-                        Layer1_6Sheet()
+                        Layer3Sheet()
                     }
                     .padding()
                     
@@ -88,7 +88,7 @@ struct Layer_3: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[0]){
-                            Layer1Sheet()
+                            Layer3_1Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -109,7 +109,7 @@ struct Layer_3: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[1]){
-                            Layer1Sheet()
+                            Layer3_2Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -130,7 +130,7 @@ struct Layer_3: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[2]){
-                            Layer1Sheet()
+                            Layer3_3Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -151,7 +151,7 @@ struct Layer_3: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[3]){
-                            Layer1Sheet()
+                            Layer3_4Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -172,7 +172,7 @@ struct Layer_3: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[4]){
-                            Layer1Sheet()
+                            Layer3_5Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -193,7 +193,7 @@ struct Layer_3: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[5]){
-                            Layer1Sheet()
+                            Layer3_6Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
@@ -214,7 +214,7 @@ struct Layer_3: View {
                                 .padding()
                         }
                         .sheet(isPresented: $sheetArray[6]){
-                            Layer1Sheet()
+                            Layer3_7Sheet()
                                 .presentationDetents([.medium, .medium])
                         }
                         // Border at the bottom
