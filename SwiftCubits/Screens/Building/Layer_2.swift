@@ -62,7 +62,7 @@ struct Layer_2: View {
             }
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
-        }
+        }.padding(.bottom, 55)
     }
 }
 

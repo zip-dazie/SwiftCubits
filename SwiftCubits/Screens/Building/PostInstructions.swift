@@ -62,7 +62,7 @@ struct PostInstructions: View {
                     }
                     Spacer()
                 }
-            }
+            }.padding(.bottom, 55)
         }
         
     }

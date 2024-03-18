@@ -10,9 +10,8 @@ struct SignIn: View {
         NavigationStack{
             VStack{
                 HStack {
-                    
                     VStack(alignment: .leading) {
-                        Text("Welcome to")
+                        Text("Welcome to").navigationBarBackButtonHidden(true)
                             .font(.system(size:25))
                             .padding(.bottom, 5)
                         
@@ -59,16 +58,13 @@ struct SignIn: View {
                     Text("Have an Account?")
                         .font(.system(size: 14))
                         .opacity(0.6)
-                    
-                    Button(action: {
-                        print("go to login")
-                    }){
+                    NavigationLink(destination: AuthView(showSignInView:.constant(true))){
                         Text("Login")
                             .font(.system(size: 14))
                             .bold()
                             .foregroundColor(Color("customPurple"))
-                        }
-                        
+                    }
+                
                         Spacer()
                         
                     }
