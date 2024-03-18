@@ -33,18 +33,21 @@ struct Profile: View {
                     Spacer()
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack(spacing: 0) {
-                        ForEach(0..<6, id: \.self) { index in
-                            GeometryReader { geometry in
-                                Image("catFiller")
-                                    .resizable()
-                                    .frame(width: 198, height: 270)
-                                    .cornerRadius(10)
-                                    .scaleEffect(scaleValue(geometry: geometry), anchor: .center)
-                            }
-                            .frame(width: 198, height: 290)
-                            
-                        }
+                    LazyHStack(spacing: 20) {
+                        Image("skullHome")
+                            .resizable()
+                            .frame(width: 198, height: 270)
+                            .cornerRadius(10)
+                        
+                        Image("asteroidHome")
+                            .resizable()
+                            .frame(width: 198, height: 270)
+                            .cornerRadius(10)
+                        
+                        Image("personHome")
+                            .resizable()
+                            .frame(width: 198, height: 270)
+                            .cornerRadius(10)
                     }
                 }
             }
