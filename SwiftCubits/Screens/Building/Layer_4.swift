@@ -29,7 +29,7 @@ struct Layer_4: View {
                         Button(action: {
                             isLayerPresented.toggle();
                         }){
-                            Image("Layer3")
+                            Image("Layer4")
                                 .offset(y:30)
                         }
                     }
