@@ -129,9 +129,9 @@ struct Build: View {
                         }
             }
             .padding(.top)
-            
             Spacer(minLength: 55)
-        }
+        }.navigationBarBackButtonHidden(true)
+
     }
     
 }

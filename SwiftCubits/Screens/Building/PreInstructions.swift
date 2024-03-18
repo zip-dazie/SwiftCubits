@@ -52,9 +52,9 @@ struct PreInstructions: View{
                     NavButton(destination: Layer_1(), icon: "rightArrow", linkText: "Next")
                     Spacer()
                 }
-                .padding(.bottom, 55)
-            }
-        }
+                
+            }.padding(.bottom, 55)
+        }.navigationBarBackButtonHidden(true)
     }
 }
 
