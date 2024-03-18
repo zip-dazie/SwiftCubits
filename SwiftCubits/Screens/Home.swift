@@ -170,7 +170,7 @@ struct Home: View {
                     print("Main Button Tapped")
                 }) {
                     HStack {
-                        Image("uploadicon")
+                        Image("asteroidIcon")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 65.0)
@@ -178,7 +178,7 @@ struct Home: View {
                         
                         VStack {
                             HStack {
-                                Text("3D Model Picture")
+                                Text("Asteroid")
                                     .bold()
                                     .font(.system(size: 16))
                                     .foregroundColor(.black)
@@ -221,7 +221,7 @@ struct Home: View {
                     print("Main Button Tapped")
                 }) {
                     HStack {
-                        Image("uploadicon")
+                        Image("cubeIcon")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 65.0)
@@ -229,7 +229,7 @@ struct Home: View {
                         
                         VStack {
                             HStack {
-                                Text("Mountain")
+                                Text("Cube")
                                     .bold()
                                     .font(.system(size: 16))
                                     .foregroundColor(.black)
@@ -273,7 +273,7 @@ struct Home: View {
                     print("Main Button Tapped")
                 }) {
                     HStack {
-                        Image("uploadicon")
+                        Image("skullIcon")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 65.0)
@@ -281,7 +281,7 @@ struct Home: View {
                         
                         VStack {
                             HStack {
-                                Text("Human Figure")
+                                Text("Skull")
                                     .bold()
                                     .font(.system(size: 16))
                                     .foregroundColor(.black)
