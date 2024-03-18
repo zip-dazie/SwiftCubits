@@ -241,6 +241,62 @@ struct Layer_3: View {
         }
     }
 }
+
+//TODO: to Insert a 3D model, use the url in the PARENT(not here) struct declarations, quantity is hard-coded
+struct UnitViewer_3: View {
+    let placeholders = [
+        ModelPlaceholder(label: "6x", modelURL: "Icon1"),
+        ModelPlaceholder(label: "2x", modelURL: "Icon2"),
+        ModelPlaceholder(label: "6x", modelURL: "Icon3"),
+        ModelPlaceholder(label: "4x", modelURL: "Icon4"),
+        ModelPlaceholder(label: "4x", modelURL: "Icon5")
+    ]
+
+    var body: some View {
+       
+            UnitView_2(modelPlaceholders: placeholders)
+        }
+    }
+
+
+struct UnitView_3: View {
+    var modelPlaceholders: [ModelPlaceholder]
+    let itemWidth: CGFloat = 70
+    let spacing: CGFloat = 7.5
+    let gridPadding: CGFloat = 8
+    let horizontalPadding: CGFloat = 20
+
+    private var columns: [GridItem] {
+        let availableWidth = UIScreen.main.bounds.width - (2 * horizontalPadding) - (spacing * 3)
+        let numberOfItemsInRow = Int(availableWidth / (itemWidth + spacing))
+        return Array(repeating: .init(.fixed(itemWidth)), count: max(numberOfItemsInRow, 1))
+    }
+
+    var body: some View {
+        VStack {
+            HStack(alignment: .top, spacing: 0) {
+                Spacer()
+                Spacer()
+                Text("Units")
+                    .font(.system(size: 20))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .bold()
+                Spacer()
+            }
+        }
+        LazyVGrid(columns: columns, alignment: .center, spacing: spacing) {
+            ForEach(modelPlaceholders) { modelPlaceholder in
+                ModelPlaceholderIcon(placeholder: modelPlaceholder)
+                    .frame(width: itemWidth, height: itemWidth)
+            }
+        }
+        .padding([.horizontal, .vertical], gridPadding)
+        .background(Color("GridColor").opacity(0.28))
+        .cornerRadius(10)
+        .padding(.horizontal, 20)
+    }
+}
+
 #Preview {
     Layer_3()
 }

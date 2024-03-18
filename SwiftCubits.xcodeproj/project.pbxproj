@@ -64,6 +64,7 @@
 		3411E6162BA88A4500BD971B /* Layer4_4Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E6152BA88A4500BD971B /* Layer4_4Sheet.swift */; };
 		3411E6182BA88A5800BD971B /* Layer4_5Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E6172BA88A5800BD971B /* Layer4_5Sheet.swift */; };
 		3411E61A2BA88A6C00BD971B /* Layer4_6Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E6192BA88A6C00BD971B /* Layer4_6Sheet.swift */; };
+		3411E61C2BA8906E00BD971B /* UnitViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411E61B2BA8906E00BD971B /* UnitViewer.swift */; };
 		344FA4A52B96EE8C0025D4DB /* Cubits in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A42B96EE8C0025D4DB /* Cubits */; };
 		344FA4A92B96FB880025D4DB /* CubitsCatalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */; };
 		344FA4AB2B970F850025D4DB /* CTest.scn in Resources */ = {isa = PBXBuildFile; fileRef = 344FA4AA2B970F850025D4DB /* CTest.scn */; };
@@ -191,6 +192,7 @@
 		3411E6152BA88A4500BD971B /* Layer4_4Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer4_4Sheet.swift; sourceTree = "<group>"; };
 		3411E6172BA88A5800BD971B /* Layer4_5Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer4_5Sheet.swift; sourceTree = "<group>"; };
 		3411E6192BA88A6C00BD971B /* Layer4_6Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer4_6Sheet.swift; sourceTree = "<group>"; };
+		3411E61B2BA8906E00BD971B /* UnitViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewer.swift; sourceTree = "<group>"; };
 		344FA4A42B96EE8C0025D4DB /* Cubits */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Cubits; path = SwiftCubits/Cubits; sourceTree = SOURCE_ROOT; };
 		344FA4A82B96FB880025D4DB /* CubitsCatalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = CubitsCatalog.scnassets; sourceTree = "<group>"; };
 		344FA4AA2B970F850025D4DB /* CTest.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = CTest.scn; path = SwiftCubits/Cubits/CTest.scn; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				B570A8FE2B79F9860095ED37 /* GlobalStates.swift */,
 				B570A9002B7B32440095ED37 /* UploadedFiles.swift */,
 				B57A90422BA0196400C8A768 /* NavButton.swift */,
+				3411E61B2BA8906E00BD971B /* UnitViewer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -726,6 +729,7 @@
 				346C21F82B8DD588003CC59D /* SheetView.swift in Sources */,
 				346C21F72B8DD588003CC59D /* PreInstructions.swift in Sources */,
 				3411E5B12BA6CF8200BD971B /* Layer1_4Sheet.swift in Sources */,
+				3411E61C2BA8906E00BD971B /* UnitViewer.swift in Sources */,
 				34D48EAF2B9D6F7200908C49 /* Cubit_6_2_View.swift in Sources */,
 				3411E6022BA889B700BD971B /* Layer4Sheet.swift in Sources */,
 				346C21F62B8DD588003CC59D /* SingleCubitView.swift in Sources */,
