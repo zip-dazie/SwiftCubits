@@ -78,49 +78,39 @@ struct Home: View {
                 }
                 //two recent creations
                 HStack {
-                    //first creation is the demo shape
-                    Button(action: {
-                        print("Main Button Tapped")
-                        preInstructionsView = true;
-                        
-                    }) {
-                        VStack {
-                            Image("demoShape")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 131, height: 98)
-                                .padding(.top)
-                            Spacer()
-                        }
-                        .frame(width: 163, height: 163)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .overlay(
-                            VStack {
-                                Spacer()
-                                HStack {
-                                    Text("13 MB")
-                                        .foregroundColor(.black)
-                                    Spacer()
-                                    Button(action: {
-                                        print("Nested Button Tapped")
-                                    }) {
-                                        Image("horizontaldots")
-                                            .frame(width: 24, height: 24)
-                                    }
-                                }
-                                .padding([.leading, .bottom, .trailing])
-                            }
-                        )
-                    }
-                    .shadow(color: .gray, radius: 5, x:0, y:0)
-                    .padding(.leading, 20)
-                    .padding(.trailing, 10)
-                    .fullScreenCover(isPresented: $preInstructionsView, content:{
-                        NavigationView{
-                            PreInstructions(preInstructionsView: $preInstructionsView)
-                        }
-                    })
+                    NavigationLink(destination: PreInstructions(preInstructionsView: .constant(true))){
+                       VStack {
+                           Image("demoShape")
+                               .resizable()
+                               .aspectRatio(contentMode: .fit)
+                               .frame(width: 131, height: 98)
+                               .padding(.top)
+                           Spacer()
+                       }
+                       .frame(width: 163, height: 163)
+                       .background(Color.white)
+                       .cornerRadius(10)
+                       .overlay(
+                           VStack {
+                               Spacer()
+                               HStack {
+                                   Text("13 MB")
+                                       .foregroundColor(.black)
+                                   Spacer()
+                                   Button(action: {
+                                       print("Nested Button Tapped")
+                                   }) {
+                                       Image("horizontaldots")
+                                           .frame(width: 24, height: 24)
+                                   }
+                               }
+                               .padding([.leading, .bottom, .trailing])
+                           }
+                       )
+                   }
+                   .shadow(color: .gray, radius: 5, x:0, y:0)
+                   .padding(.leading, 20)
+                   .padding(.trailing, 10)
                     
                     Spacer()
                     // second creation with skull shape

@@ -74,15 +74,18 @@ struct PreInstructions: View{
                                     }
                                 }
                 }
-        }
+                HStack {
+                    Spacer()
+                    NavButton(destination: Layer_1(), icon: "rightArrow", linkText: "Next")
+                    Spacer()
+                }
+                .padding(.bottom, 55)
+            }
             .padding()
-            NavButton(destination:Layer_1(), icon: "rightArrow", linkText: "Next")
-                .padding(.leading,20)
-        
-        
-            
-           
         }
+        .padding(.bottom, 55)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 

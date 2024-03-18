@@ -227,9 +227,16 @@ struct Layer_1: View {
                         .frame(width: 310, height: 1)
                         .foregroundColor(.borderGray)
                 }
+//                HStack {
+//                    Color.clear
+//                        .frame(width: 40, height: 40)
+//                    Spacer()
+//                    NavButton(destination:Layer_2(), icon: "rightArrow", linkText: "Next")
+//                }
+//                .padding(.horizontal)
             }
             .navigationBarBackButtonHidden(true)
-            .navigationBarHidden(true)
+            .navigationBarHidden(false)
         }
     }
 
