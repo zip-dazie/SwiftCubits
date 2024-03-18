@@ -15,12 +15,12 @@ struct Profile: View {
     var body: some View {
         ScrollView{
             LazyVStack {
-                Image("catFiller")
+                Image("peterIcon")
                     .resizable()
                     .frame(width: 72, height: 72)
                     .clipShape(Circle())
                 
-                Text("Peter Anteater")
+                Text("Peter Johnson")
                     .bold()
                     .font(.system(size:20))
                     .padding()

@@ -20,14 +20,14 @@ struct Home: View {
                     VStack(alignment: .leading) {
                         Text("Welcome back\n").navigationBarBackButtonHidden(true)
 
-                            .font(.system(size:16))
+                            .font(.system(size:24))
                         
                         Text("Peter!")
                             .bold()
                             .font(.system(size:24))
                     }
                     Spacer()
-                    Image("catFiller")
+                    Image("peterIcon")
                         .resizable()
                         .frame(width: 54, height: 54)
                         .clipShape(Circle())
