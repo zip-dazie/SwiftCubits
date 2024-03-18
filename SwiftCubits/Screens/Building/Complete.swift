@@ -68,6 +68,7 @@ struct PostInstructions: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
     }
+    
         
 }
 

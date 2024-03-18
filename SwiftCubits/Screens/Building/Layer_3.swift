@@ -41,6 +41,7 @@ struct Layer_3: View {
                 
                     //Cubits pieces
                     UnitViewer_3()
+                        .padding(.top,20)
                  
                     //Instructions
                     HStack{

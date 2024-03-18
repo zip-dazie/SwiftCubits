@@ -41,6 +41,17 @@ struct Layer_1: View {
                     }
                     .padding()
                     
+                    VStack(){
+                        HStack{
+                            Text("Units")
+                                .bold()
+                                .font(.system(size:20))
+                                .padding([.leading], 20)
+                            
+                            Spacer()
+                        }
+                        .padding([.top], 30)
+                    }
 //                    UnitViewer()
                         
                         //Cubits pieces
