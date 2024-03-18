@@ -20,39 +20,40 @@ struct PreInstructions: View{
     //MARK: Programmatically pass these into our grid
     let cubitNames = ["Cubit_2-1", "Cubit_2-2", "Cubit_5-4", "Cubit_6-2", "Cubit_7-1"]
     var body: some View {
-        NavigationStack{
-            ScrollView{
-                VStack{
+        NavigationStack {
+            ScrollView {
+                VStack {
                     Text("Asteroid")
                         .fontWeight(.heavy)
-                        .font(.system(size:30))
+                        .font(.system(size: 30))
                         .padding()
                     Image("asteroidImage") //TODO: Replace with asteroid
                         .resizable()
-                        .frame(width:330, height:223)
-                    
+                        .frame(width: 330, height: 223)
+
                 }
                 .padding([.bottom], 20)
-                HStack{
+                HStack {
                     Text("Units needed")
                         .fontWeight(.bold)
-                        .font(.system(size:20))
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 20))
+                        .multilineTextAlignment(.leading)
                         .padding([.leading], 20)
                     Spacer()
                 }
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                    ForEach(cubitNames, id:\.self) { imageName in
+                    ForEach(cubitNames, id: \.self) { imageName in
                         GridItemView(imageName: imageName) //TODO: See griditemView
                     }
                 }
                 .padding()
-                NavButton(destination:Layer_1(), icon: "rightArrow", linkText: "Next")
-
-                .padding(.leading, 20)
-            }.padding(.bottom, 55)
-            
-           
+                HStack { 
+                    Spacer()
+                    NavButton(destination: Layer_1(), icon: "rightArrow", linkText: "Next")
+                    Spacer()
+                }
+                .padding(.bottom, 55)
+            }
         }
     }
 }
