@@ -81,7 +81,7 @@ struct Home: View {
                 HStack {
                     NavigationLink(destination: PreInstructions(preInstructionsView: .constant(true))){
                         VStack {
-                            Image("demoShape")
+                            Image("asteroidImage")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 131, height: 98)

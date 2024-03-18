@@ -27,9 +27,9 @@ struct PreInstructions: View{
                         .fontWeight(.heavy)
                         .font(.system(size:30))
                         .padding()
-                    Image("demoShape") //TODO: Replace with asteroid
+                    Image("asteroidImage") //TODO: Replace with asteroid
                         .resizable()
-                        .frame(width:330, height:300)
+                        .frame(width:330, height:223)
                     
                 }
                 .padding([.bottom], 20)
