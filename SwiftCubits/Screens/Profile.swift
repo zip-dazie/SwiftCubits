@@ -121,27 +121,26 @@ struct Profile: View {
                 
             }
             .padding([.top,.bottom], 5)
-            Button("Log out"){
-                Task{
-                    do{
+            Button(action: {
+                Task {
+                    do {
                         try viewModel.signOut()
                         showSignInView = true
-                    } catch{
+                    } catch {
                         //TODO: FIX THIS ERROR HANDLING
                         print(error)
                     }
                 }
+            }) {
+                Text("Log out")
+                    .frame(width: 342, height: 65)
+                    .foregroundColor(Color.black)
+                    .bold()
+                    .background(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color("CustomGray"))
+                    )
             }
-            .frame(width:342, height: 65 )
-            .foregroundColor(Color.black)
-            .bold()
-            .background(
-                RoundedRectangle(
-                    cornerRadius: 10,
-                    style:.continuous
-                )
-                .fill(Color("CustomGray"))
-            )
             
             
         } .padding(.bottom, 55)
