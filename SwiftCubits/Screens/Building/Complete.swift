@@ -52,7 +52,6 @@ struct PostInstructions: View {
 //                    LayerView()
                     Spacer()
                     NavigationLink(destination: Home()) {
-                        
                         Text("Save to Favorites")
                             .foregroundColor(.white)
                             .font(.system(size: 20))
@@ -61,12 +60,15 @@ struct PostInstructions: View {
                             .background(Color.customPurple)
                             .cornerRadius(10)
                     }
+                    
                     Spacer()
                 }
             }.padding(.bottom, 55)
         }
-        
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
+        
 }
 
 #Preview {

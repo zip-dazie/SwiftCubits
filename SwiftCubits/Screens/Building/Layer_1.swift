@@ -20,12 +20,13 @@ struct Layer_1: View {
                         Text("Layer 1")
                             .font(.system(size: 27, weight: .bold))
                             .frame(maxWidth: .infinity, alignment: .center)
-                        
+                
                         Spacer()
                         NavButton(destination: Layer_2(), icon: "rightArrow")
                             .frame(width: 30, height: 30, alignment: .trailing)
                     }
                     .padding()
+                    
                     
                     HStack{
                         Button(action: {
@@ -220,23 +221,23 @@ struct Layer_1: View {
                         Layer1_6Sheet()
                             .presentationDetents([.medium, .medium])
                     }
-                    
-                    
                     // Border at the bottom
                     Rectangle()
                         .frame(width: 310, height: 1)
                         .foregroundColor(.borderGray)
+                
+                    HStack {
+                        Color.clear
+                            .frame(width: 40, height: 40)
+                        Spacer()
+                        NavButton(destination:Layer_2(), icon: "rightArrow", linkText: "Next")
+                    }
+                    .padding(.horizontal)
                 }
-//                HStack {
-//                    Color.clear
-//                        .frame(width: 40, height: 40)
-//                    Spacer()
-//                    NavButton(destination:Layer_2(), icon: "rightArrow", linkText: "Next")
-//                }
-//                .padding(.horizontal)
             }
+            .padding(.bottom, 55)
             .navigationBarBackButtonHidden(true)
-            .navigationBarHidden(false)
+            .navigationBarHidden(true)
         }
     }
 

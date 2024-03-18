@@ -15,12 +15,16 @@ struct Layer_4: View {
             ScrollView {
                 VStack {
                     HStack {
-                        NavButton(destination: Layer_3(), icon: "leftArrow")
                         Spacer()
+                        NavButton(destination: Layer_3(), icon: "leftArrow")
+                            .frame(width: 30, height: 30)
                         Text("Layer 4")
                             .font(.system(size: 27, weight: .bold))
-                        Spacer()
+                            .frame(maxWidth: .infinity, alignment: .center)
+
                         NavButton(destination: PostInstructions(), icon: "rightArrow")
+                            .frame(width: 30, height: 30)
+                        Spacer()
                     }
                     .padding(.horizontal)
                     
@@ -213,11 +217,19 @@ struct Layer_4: View {
                         .frame(width: 310, height: 1)
                         .foregroundColor(.borderGray)
                     
+                    HStack {
+                        Color.clear
+                            .frame(width: 40, height: 40)
+                        Spacer()
+                        NavButton(destination: PostInstructions(), icon: "rightArrow", linkText: "Next")
+                    }
+                    .padding(.horizontal)
                 }
             }
-            .navigationBarBackButtonHidden(true)
-            .navigationBarHidden(true)
         }
+        .padding(.bottom,55)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 #Preview {

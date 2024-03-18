@@ -224,13 +224,22 @@ struct Layer_2: View {
                             .frame(width: 310, height: 1)
                             .foregroundColor(.borderGray)
                         
-                        
+                        HStack {
+                            NavButton(destination: Layer_1(), icon: "leftArrow", linkText: "Back", orientation: .backward)
+                            Spacer()
+                            NavButton(destination: Layer_3(), icon: "rightArrow", linkText: "Next")
+                        }
+                        .padding(.horizontal)
                     //end of VStack
                     }
                 }
-                .navigationBarBackButtonHidden(true)
-                .navigationBarHidden(true)
+//                .padding(.bottom, 55)
+//                .navigationBarBackButtonHidden(true)
+//                .navigationBarHidden(true)
             }
+            .padding(.bottom, 55)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }
